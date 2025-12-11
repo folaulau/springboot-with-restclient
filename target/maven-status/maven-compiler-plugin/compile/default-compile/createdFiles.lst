@@ -1,0 +1,9 @@
+com/folautech/restclient/dto/User$UserBuilder.class
+com/folautech/restclient/dto/User.class
+com/folautech/restclient/dto/Post$PostBuilder.class
+com/folautech/restclient/SpringbootWithRestclientApplication.class
+com/folautech/restclient/config/RestClientConfig.class
+com/folautech/restclient/service/JsonPlaceholderService$2.class
+com/folautech/restclient/dto/Post.class
+com/folautech/restclient/service/JsonPlaceholderService.class
+com/folautech/restclient/service/JsonPlaceholderService$1.class

@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.folautech.restclient.RestClientDemoTest" time="0.47" tests="0" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/folaukaveinga/Github/springboot-with-restclient/target/test-classes:/Users/folaukaveinga/Github/springboot-with-restclient/target/classes:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.0.0/spring-boot-starter-webmvc-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter/4.0.0/spring-boot-starter-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.0.0/spring-boot-starter-logging-4.0.0.jar:/Users/folaukaveinga/.m2/repository/ch/qos/logback/logback-classic/1.5.21/logback-classic-1.5.21.jar:/Users/folaukaveinga/.m2/repository/ch/qos/logback/logback-core/1.5.21/logback-core-1.5.21.jar:/Users/folaukaveinga/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.2/log4j-to-slf4j-2.25.2.jar:/Users/folaukaveinga/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.2/log4j-api-2.25.2.jar:/Users/folaukaveinga/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/Users/folaukaveinga/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/folaukaveinga/.m2/repository/org/yaml/snakeyaml/2.5/snakeyaml-2.5.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.0.0/spring-boot-starter-jackson-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-jackson/4.0.0/spring-boot-jackson-4.0.0.jar:/Users/folaukaveinga/.m2/repository/tools/jackson/core/jackson-databind/3.0.2/jackson-databind-3.0.2.jar:/Users/folaukaveinga/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.20/jackson-annotations-2.20.jar:/Users/folaukaveinga/.m2/repository/tools/jackson/core/jackson-core/3.0.2/jackson-core-3.0.2.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.0.0/spring-boot-starter-tomcat-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.0.0/spring-boot-starter-tomcat-runtime-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.14/tomcat-embed-core-11.0.14.jar:/Users/folaukaveinga/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.14/tomcat-embed-el-11.0.14.jar:/Users/folaukaveinga/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.14/tomcat-embed-websocket-11.0.14.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.0.0/spring-boot-tomcat-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.0.0/spring-boot-http-converter-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-web/7.0.1/spring-web-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-beans/7.0.1/spring-beans-7.0.1.jar:/Users/folaukaveinga/.m2/repository/io/micrometer/micrometer-observation/1.16.0/micrometer-observation-1.16.0.jar:/Users/folaukaveinga/.m2/repository/io/micrometer/micrometer-commons/1.16.0/micrometer-commons-1.16.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.0.0/spring-boot-webmvc-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-servlet/4.0.0/spring-boot-servlet-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-webmvc/7.0.1/spring-webmvc-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-aop/7.0.1/spring-aop-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-expression/7.0.1/spring-expression-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-devtools/4.0.0/spring-boot-devtools-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot/4.0.0/spring-boot-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-core/7.0.1/spring-core-7.0.1.jar:/Users/folaukaveinga/.m2/repository/commons-logging/commons-logging/1.3.5/commons-logging-1.3.5.jar:/Users/folaukaveinga/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-context/7.0.1/spring-context-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.0.0/spring-boot-autoconfigure-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc-test/4.0.0/spring-boot-starter-webmvc-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-jackson-test/4.0.0/spring-boot-starter-jackson-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-test/4.0.0/spring-boot-starter-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-test/4.0.0/spring-boot-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/4.0.0/spring-boot-test-autoconfigure-4.0.0.jar:/Users/folaukaveinga/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/folaukaveinga/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/folaukaveinga/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.4/jakarta.xml.bind-api-4.0.4.jar:/Users/folaukaveinga/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/Users/folaukaveinga/.m2/repository/net/minidev/json-smart/2.6.0/json-smart-2.6.0.jar:/Users/folaukaveinga/.m2/repository/net/minidev/accessors-smart/2.6.0/accessors-smart-2.6.0.jar:/Users/folaukaveinga/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/Users/folaukaveinga/.m2/repository/org/assertj/assertj-core/3.27.6/assertj-core-3.27.6.jar:/Users/folaukaveinga/.m2/repository/net/bytebuddy/byte-buddy/1.17.8/byte-buddy-1.17.8.jar:/Users/folaukaveinga/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/folaukaveinga/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/folaukaveinga/.m2/repository/org/junit/jupiter/junit-jupiter/6.0.1/junit-jupiter-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.0.1/junit-jupiter-api-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/folaukaveinga/.m2/repository/org/junit/platform/junit-platform-commons/6.0.1/junit-platform-commons-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/folaukaveinga/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.0.1/junit-jupiter-params-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.0.1/junit-jupiter-engine-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/junit/platform/junit-platform-engine/6.0.1/junit-platform-engine-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar:/Users/folaukaveinga/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.8/byte-buddy-agent-1.17.8.jar:/Users/folaukaveinga/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/folaukaveinga/.m2/repository/org/mockito/mockito-junit-jupiter/5.20.0/mockito-junit-jupiter-5.20.0.jar:/Users/folaukaveinga/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/folaukaveinga/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-test/7.0.1/spring-test-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/xmlunit/xmlunit-core/2.10.4/xmlunit-core-2.10.4.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-webmvc-test/4.0.0/spring-boot-webmvc-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-web-server/4.0.0/spring-boot-web-server-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-resttestclient/4.0.0/spring-boot-resttestclient-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-restclient/4.0.0/spring-boot-restclient-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-http-client/4.0.0/spring-boot-http-client-4.0.0.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="America/Denver"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="APPLICATION_NAME" value="springboot-with-restclient"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-21.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/folaukaveinga/Github/springboot-with-restclient/target/surefire/surefirebooter-20251210233709373_3.jar /Users/folaukaveinga/Github/springboot-with-restclient/target/surefire 2025-12-10T23-37-09_340-jvmRun1 surefire-20251210233709373_1tmp surefire_0-20251210233709373_2tmp"/>
+    <property name="http.nonProxyHosts" value="com|*.com|localhost|*.localhost|citrixaccess.va.gov|*.citrixaccess.va.gov|citrixaccesspiv.va.gov|*.citrixaccesspiv.va.gov|citrixaccesstoken.va.gov|*.citrixaccesstoken.va.gov|max.gov|*.max.gov|www.aide.oit.va.gov|*.www.aide.oit.va.gov|apps.aide.oit.va.gov|*.apps.aide.oit.va.gov|vbms.va.gov|*.vbms.va.gov|abbott|*.abbott|abogado|*.abogado|ac|*.ac|academy|*.academy|accountant|*.accountant|accountants|*.accountants|active|*.active|actor|*.actor|ad|*.ad|ads|*.ads|ae|*.ae|aero|*.aero|aetna|*.aetna|af|*.af|afl|*.afl|ag|*.ag|agency|*.agency|ai|*.ai|airforce|*.airforce|al|*.al|allfinanz|*.allfinanz|alsace|*.alsace|am|*.am|amsterdam|*.amsterdam|an|*.an|android|*.android|ao|*.ao|apartments|*.apartments|aq|*.aq|aquarelle|*.aquarelle|ar|*.ar|archi|*.archi|army|*.army|arpa|*.arpa|as|*.as|asia|*.asia|associates|*.associates|at|*.at|attorney|*.attorney|au|*.au|auction|*.auction|audio|*.audio|autos|*.autos|aw|*.aw|ax|*.ax|axa|*.axa|az|*.az|ba|*.ba|band|*.band|bank|*.bank|barclaycard|*.barclaycard|barclays|*.barclays|bargains|*.bargains|bauhaus|*.bauhaus|bayern|*.bayern|bb|*.bb|bbc|*.bbc|bd|*.bd|be|*.be|berlin|*.berlin|best|*.best|bf|*.bf|bg|*.bg|bh|*.bh|bi|*.bi|bid|*.bid|bike|*.bike|bingo|*.bingo|bio|*.bio|biz|*.biz|bj|*.bj|bl|*.bl|black|*.black|blackfriday|*.blackfriday|blog|*.blog|bloomberg|*.bloomberg|blue|*.blue|bm|*.bm|bmw|*.bmw|bn|*.bn|bnpparibas|*.bnpparibas|bo|*.bo|boats|*.boats|bond|*.bond|boo|*.boo|boutique|*.boutique|bq|*.bq|br|*.br|brussels|*.brussels|bs|*.bs|bt|*.bt|budapest|*.budapest|build|*.build|builders|*.builders|business|*.business|buzz|*.buzz|bv|*.bv|bw|*.bw|by|*.by|bz|*.bz|bzh|*.bzh|ca|*.ca|cab|*.cab|cafe|*.cafe|cal|*.cal|camera|*.camera|camp|*.camp|cancerresearch|*.cancerresearch|canon|*.canon|capetown|*.capetown|capital|*.capital|caravan|*.caravan|cards|*.cards|care|*.care|career|*.career|careers|*.careers|cartier|*.cartier|casa|*.casa|cash|*.cash|casino|*.casino|cat|*.cat|catering|*.catering|cbn|*.cbn|cbre|*.cbre|cc|*.cc|cd|*.cd|center|*.center|ceo|*.ceo|cern|*.cern|cf|*.cf|cfd|*.cfd|cg|*.cg|ch|*.ch|channel|*.channel|chase|*.chase|chat|*.chat|cheap|*.cheap|chloe|*.chloe|christmas|*.christmas|chrome|*.chrome|church|*.church|ci|*.ci|citic|*.citic|city|*.city|ck|*.ck|cl|*.cl|claims|*.claims|cleaning|*.cleaning|click|*.click|clinic|*.clinic|clothing|*.clothing|club|*.club|cm|*.cm|cn|*.cn|co|*.co|coach|*.coach|codes|*.codes|coffee|*.coffee|college|*.college|cologne|*.cologne|community|*.community|company|*.company|computer|*.computer|condos|*.condos|construction|*.construction|consulting|*.consulting|contractors|*.contractors|cooking|*.cooking|cool|*.cool|coop|*.coop|country|*.country|courses|*.courses|cr|*.cr|credit|*.credit|creditcard|*.creditcard|cricket|*.cricket|crs|*.crs|cruises|*.cruises|cu|*.cu|cuisinella|*.cuisinella|cv|*.cv|cw|*.cw|cx|*.cx|cy|*.cy|cymru|*.cymru|cyou|*.cyou|cz|*.cz|dabur|*.dabur|dad|*.dad|dance|*.dance|datsun|*.datsun|day|*.day|dclk|*.dclk|de|*.de|deals|*.deals|degree|*.degree|delivery|*.delivery|democrat|*.democrat|dental|*.dental|dentist|*.dentist|desi|*.desi|design|*.design|dev|*.dev|diamonds|*.diamonds|diet|*.diet|digital|*.digital|direct|*.direct|directory|*.directory|discount|*.discount|dj|*.dj|dk|*.dk|dm|*.dm|dnp|*.dnp|do|*.do|docs|*.docs|doha|*.doha|domains|*.domains|doosan|*.doosan|download|*.download|durban|*.durban|dvag|*.dvag|dz|*.dz|eat|*.eat|ec|*.ec|edu|*.edu|education|*.education|ee|*.ee|eg|*.eg|eh|*.eh|email|*.email|emerck|*.emerck|energy|*.energy|engineer|*.engineer|engineering|*.engineering|enterprises|*.enterprises|epson|*.epson|equipment|*.equipment|er|*.er|erni|*.erni|es|*.es|esq|*.esq|estate|*.estate|et|*.et|eu|*.eu|eurovision|*.eurovision|eus|*.eus|events|*.events|everbank|*.everbank|exchange|*.exchange|expert|*.expert|exposed|*.exposed|express|*.express|fail|*.fail|faith|*.faith|fan|*.fan|fans|*.fans|farm|*.farm|fashion|*.fashion|feedback|*.feedback|fi|*.fi|film|*.film|finance|*.finance|financial|*.financial|firmdale|*.firmdale|fish|*.fish|fishing|*.fishing|fit|*.fit|fitness|*.fitness|fj|*.fj|fk|*.fk|flights|*.flights|florist|*.florist|flowers|*.flowers|flsmidth|*.flsmidth|fly|*.fly|fm|*.fm|fo|*.fo|foo|*.foo|football|*.football|forex|*.forex|forsale|*.forsale|foundation|*.foundation|fr|*.fr|frl|*.frl|frogans|*.frogans|fund|*.fund|furniture|*.furniture|futbol|*.futbol|fyi|*.fyi|ga|*.ga|gal|*.gal|gallery|*.gallery|garden|*.garden|gb|*.gb|gbiz|*.gbiz|gd|*.gd|gdn|*.gdn|ge|*.ge|gent|*.gent|gf|*.gf|gg|*.gg|ggee|*.ggee|gh|*.gh|gi|*.gi|gift|*.gift|gifts|*.gifts|gives|*.gives|gl|*.gl|glass|*.glass|gle|*.gle|global|*.global|globo|*.globo|gm|*.gm|gmail|*.gmail|gmo|*.gmo|gmx|*.gmx|gn|*.gn|gold|*.gold|goldpoint|*.goldpoint|golf|*.golf|goo|*.goo|goog|*.goog|google|*.google|gop|*.gop|gp|*.gp|gq|*.gq|gr|*.gr|graphics|*.graphics|gratis|*.gratis|green|*.green|gripe|*.gripe|gs|*.gs|gt|*.gt|gu|*.gu|guge|*.guge|guide|*.guide|guitars|*.guitars|guru|*.guru|gw|*.gw|gy|*.gy|hamburg|*.hamburg|hangout|*.hangout|haus|*.haus|healthcare|*.healthcare|help|*.help|here|*.here|hermes|*.hermes|hiphop|*.hiphop|hiv|*.hiv|hk|*.hk|hm|*.hm|hn|*.hn|holdings|*.holdings|holiday|*.holiday|homes|*.homes|horse|*.horse|host|*.host|hosting|*.hosting|house|*.house|how|*.how|hr|*.hr|ht|*.ht|hu|*.hu|ibm|*.ibm|id|*.id|ie|*.ie|ifm|*.ifm|il|*.il|im|*.im|immo|*.immo|immobilien|*.immobilien|in|*.in|industries|*.industries|infiniti|*.infiniti|info|*.info|ing|*.ing|ink|*.ink|institute|*.institute|insure|*.insure|int|*.int|international|*.international|investments|*.investments|io|*.io|iq|*.iq|ir|*.ir|irish|*.irish|is|*.is|it|*.it|iwc|*.iwc|java|*.java|jcb|*.jcb|je|*.je|jetzt|*.jetzt|jm|*.jm|jo|*.jo|jobs|*.jobs|joburg|*.joburg|jp|*.jp|juegos|*.juegos|kaufen|*.kaufen|kddi|*.kddi|ke|*.ke|kg|*.kg|kh|*.kh|ki|*.ki|kim|*.kim|kitchen|*.kitchen|kiwi|*.kiwi|km|*.km|kn|*.kn|koeln|*.koeln|komatsu|*.komatsu|kp|*.kp|kr|*.kr|krd|*.krd|kred|*.kred|kw|*.kw|ky|*.ky|kyoto|*.kyoto|kz|*.kz|la|*.la|lacaixa|*.lacaixa|land|*.land|lat|*.lat|latrobe|*.latrobe|lawyer|*.lawyer|lb|*.lb|lc|*.lc|lds|*.lds|lease|*.lease|leclerc|*.leclerc|legal|*.legal|lgbt|*.lgbt|li|*.li|lidl|*.lidl|life|*.life|lighting|*.lighting|limited|*.limited|limo|*.limo|link|*.link|lk|*.lk|loan|*.loan|loans|*.loans|local|*.local|london|*.london|lotte|*.lotte|lotto|*.lotto|lr|*.lr|ls|*.ls|lt|*.lt|ltda|*.ltda|lu|*.lu|luxe|*.luxe|luxury|*.luxury|lv|*.lv|ly|*.ly|ma|*.ma|madrid|*.madrid|maif|*.maif|maison|*.maison|management|*.management|mango|*.mango|market|*.market|marketing|*.marketing|markets|*.markets|marriott|*.marriott|mc|*.mc|me|*.me|media|*.media|meet|*.meet|melbourne|*.melbourne|meme|*.meme|memorial|*.memorial|menu|*.menu|mf|*.mf|mg|*.mg|mh|*.mh|miami|*.miami|mil|*.mil|mini|*.mini|mk|*.mk|ml|*.ml|mm|*.mm|mma|*.mma|mn|*.mn|mo|*.mo|mobi|*.mobi|moda|*.moda|moe|*.moe|monash|*.monash|money|*.money|mormon|*.mormon|mortgage|*.mortgage|moscow|*.moscow|motorcycles|*.motorcycles|mov|*.mov|movie|*.movie|mp|*.mp|mq|*.mq|mr|*.mr|ms|*.ms|mt|*.mt|mtn|*.mtn|mtpc|*.mtpc|mu|*.mu|museum|*.museum|mv|*.mv|mw|*.mw|mx|*.mx|my|*.my|mz|*.mz|na|*.na|nagoya|*.nagoya|name|*.name|navy|*.navy|nc|*.nc|ne|*.ne|net|*.net|network|*.network|neustar|*.neustar|new|*.new|news|*.news|nexus|*.nexus|nf|*.nf|ng|*.ng|ngo|*.ngo|nhk|*.nhk|ni|*.ni|nico|*.nico|ninja|*.ninja|nissan|*.nissan|nl|*.nl|no|*.no|np|*.np|nr|*.nr|nrw|*.nrw|ntt|*.ntt|nu|*.nu|nyc|*.nyc|nz|*.nz|okinawa|*.okinawa|om|*.om|one|*.one|ong|*.ong|onl|*.onl|online|*.online|ooo|*.ooo|org|*.org|organic|*.organic|osaka|*.osaka|otsuka|*.otsuka|ovh|*.ovh|pa|*.pa|page|*.page|panerai|*.panerai|paris|*.paris|partners|*.partners|parts|*.parts|pe|*.pe|pf|*.pf|pg|*.pg|ph|*.ph|pharmacy|*.pharmacy|photo|*.photo|photography|*.photography|photos|*.photos|physio|*.physio|piaget|*.piaget|pics|*.pics|pictet|*.pictet|pictures|*.pictures|pink|*.pink|pizza|*.pizza|pk|*.pk|pl|*.pl|place|*.place|plumbing|*.plumbing|plus|*.plus|pm|*.pm|pn|*.pn|pohl|*.pohl|post|*.post|pr|*.pr|praxi|*.praxi|press|*.press|pro|*.pro|prod|*.prod|productions|*.productions|prof|*.prof|properties|*.properties|property|*.property|ps|*.ps|pt|*.pt|pub|*.pub|pw|*.pw|py|*.py|qa|*.qa|qpon|*.qpon|quebec|*.quebec|racing|*.racing|re|*.re|realtor|*.realtor|recipes|*.recipes|red|*.red|redstone|*.redstone|rehab|*.rehab|reise|*.reise|reisen|*.reisen|reit|*.reit|ren|*.ren|rentals|*.rentals|repair|*.repair|report|*.report|republican|*.republican|rest|*.rest|restaurant|*.restaurant|review|*.review|reviews|*.reviews|rich|*.rich|rio|*.rio|rip|*.rip|ro|*.ro|rocks|*.rocks|rodeo|*.rodeo|rs|*.rs|rsvp|*.rsvp|ru|*.ru|ruhr|*.ruhr|rw|*.rw|ryukyu|*.ryukyu|sa|*.sa|saarland|*.saarland|sale|*.sale|samsung|*.samsung|sap|*.sap|sarl|*.sarl|saxo|*.saxo|sb|*.sb|sc|*.sc|sca|*.sca|scb|*.scb|schmidt|*.schmidt|scholarships|*.scholarships|school|*.school|schule|*.schule|schwarz|*.schwarz|science|*.science|scot|*.scot|sd|*.sd|se|*.se|services|*.services|sew|*.sew|sg|*.sg|sh|*.sh|shiksha|*.shiksha|shoes|*.shoes|shriram|*.shriram|si|*.si|site|*.site|sj|*.sj|sk|*.sk|sky|*.sky|sl|*.sl|slack|*.slack|sm|*.sm|sn|*.sn|so|*.so|social|*.social|software|*.software|sohu|*.sohu|solar|*.solar|solutions|*.solutions|soy|*.soy|space|*.space|spiegel|*.spiegel|sr|*.sr|ss|*.ss|st|*.st|study|*.study|style|*.style|su|*.su|supplies|*.supplies|supply|*.supply|support|*.support|surf|*.surf|surgery|*.surgery|suzuki|*.suzuki|sv|*.sv|sx|*.sx|sy|*.sy|sydney|*.sydney|systems|*.systems|sz|*.sz|taipei|*.taipei|tatar|*.tatar|tattoo|*.tattoo|tax|*.tax|tc|*.tc|td|*.td|tech|*.tech|technology|*.technology|tel|*.tel|temasek|*.temasek|tennis|*.tennis|tf|*.tf|tg|*.tg|th|*.th|tickets|*.tickets|tienda|*.tienda|tips|*.tips|tires|*.tires|tirol|*.tirol|tj|*.tj|tk|*.tk|tl|*.tl|tm|*.tm|tn|*.tn|to|*.to|today|*.today|tokyo|*.tokyo|tools|*.tools|top|*.top|toshiba|*.toshiba|tours|*.tours|town|*.town|toys|*.toys|tp|*.tp|tr|*.tr|trade|*.trade|trading|*.trading|training|*.training|travel|*.travel|trust|*.trust|tt|*.tt|tui|*.tui|tv|*.tv|tw|*.tw|tz|*.tz|ua|*.ua|ug|*.ug|uk|*.uk|um|*.um|university|*.university|uno|*.uno|uol|*.uol|us|*.us|uy|*.uy|uz|*.uz|va|*.va|vacations|*.vacations|vc|*.vc|ve|*.ve|vegas|*.vegas|ventures|*.ventures|versicherung|*.versicherung|vet|*.vet|vg|*.vg|vi|*.vi|viajes|*.viajes|video|*.video|villas|*.villas|vision|*.vision|vlaanderen|*.vlaanderen|vn|*.vn|vote|*.vote|voting|*.voting|voto|*.voto|voyage|*.voyage|vu|*.vu|wales|*.wales|wang|*.wang|watch|*.watch|website|*.website|wed|*.wed|wedding|*.wedding|wf|*.wf|whoswho|*.whoswho|wien|*.wien|wiki|*.wiki|williamhill|*.williamhill|win|*.win|wme|*.wme|work|*.work|works|*.works|world|*.world|ws|*.ws|wtc|*.wtc|wtf|*.wtf|xin|*.xin|xyz|*.xyz|yachts|*.yachts|yandex|*.yandex|ye|*.ye|yodobashi|*.yodobashi|yoga|*.yoga|yokohama|*.yokohama|youtube|*.youtube|yt|*.yt|za|*.za|zip|*.zip|zm|*.zm|zone|*.zone|zuerich|*.zuerich|zw|*.zw"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/folaukaveinga/Github/springboot-with-restclient/target/test-classes:/Users/folaukaveinga/Github/springboot-with-restclient/target/classes:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.0.0/spring-boot-starter-webmvc-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter/4.0.0/spring-boot-starter-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.0.0/spring-boot-starter-logging-4.0.0.jar:/Users/folaukaveinga/.m2/repository/ch/qos/logback/logback-classic/1.5.21/logback-classic-1.5.21.jar:/Users/folaukaveinga/.m2/repository/ch/qos/logback/logback-core/1.5.21/logback-core-1.5.21.jar:/Users/folaukaveinga/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.2/log4j-to-slf4j-2.25.2.jar:/Users/folaukaveinga/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.2/log4j-api-2.25.2.jar:/Users/folaukaveinga/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/Users/folaukaveinga/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/folaukaveinga/.m2/repository/org/yaml/snakeyaml/2.5/snakeyaml-2.5.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.0.0/spring-boot-starter-jackson-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-jackson/4.0.0/spring-boot-jackson-4.0.0.jar:/Users/folaukaveinga/.m2/repository/tools/jackson/core/jackson-databind/3.0.2/jackson-databind-3.0.2.jar:/Users/folaukaveinga/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.20/jackson-annotations-2.20.jar:/Users/folaukaveinga/.m2/repository/tools/jackson/core/jackson-core/3.0.2/jackson-core-3.0.2.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.0.0/spring-boot-starter-tomcat-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.0.0/spring-boot-starter-tomcat-runtime-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.14/tomcat-embed-core-11.0.14.jar:/Users/folaukaveinga/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.14/tomcat-embed-el-11.0.14.jar:/Users/folaukaveinga/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.14/tomcat-embed-websocket-11.0.14.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.0.0/spring-boot-tomcat-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.0.0/spring-boot-http-converter-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-web/7.0.1/spring-web-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-beans/7.0.1/spring-beans-7.0.1.jar:/Users/folaukaveinga/.m2/repository/io/micrometer/micrometer-observation/1.16.0/micrometer-observation-1.16.0.jar:/Users/folaukaveinga/.m2/repository/io/micrometer/micrometer-commons/1.16.0/micrometer-commons-1.16.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.0.0/spring-boot-webmvc-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-servlet/4.0.0/spring-boot-servlet-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-webmvc/7.0.1/spring-webmvc-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-aop/7.0.1/spring-aop-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-expression/7.0.1/spring-expression-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-devtools/4.0.0/spring-boot-devtools-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot/4.0.0/spring-boot-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-core/7.0.1/spring-core-7.0.1.jar:/Users/folaukaveinga/.m2/repository/commons-logging/commons-logging/1.3.5/commons-logging-1.3.5.jar:/Users/folaukaveinga/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-context/7.0.1/spring-context-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.0.0/spring-boot-autoconfigure-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc-test/4.0.0/spring-boot-starter-webmvc-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-jackson-test/4.0.0/spring-boot-starter-jackson-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-starter-test/4.0.0/spring-boot-starter-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-test/4.0.0/spring-boot-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/4.0.0/spring-boot-test-autoconfigure-4.0.0.jar:/Users/folaukaveinga/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/folaukaveinga/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/folaukaveinga/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.4/jakarta.xml.bind-api-4.0.4.jar:/Users/folaukaveinga/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/Users/folaukaveinga/.m2/repository/net/minidev/json-smart/2.6.0/json-smart-2.6.0.jar:/Users/folaukaveinga/.m2/repository/net/minidev/accessors-smart/2.6.0/accessors-smart-2.6.0.jar:/Users/folaukaveinga/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/Users/folaukaveinga/.m2/repository/org/assertj/assertj-core/3.27.6/assertj-core-3.27.6.jar:/Users/folaukaveinga/.m2/repository/net/bytebuddy/byte-buddy/1.17.8/byte-buddy-1.17.8.jar:/Users/folaukaveinga/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/folaukaveinga/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/folaukaveinga/.m2/repository/org/junit/jupiter/junit-jupiter/6.0.1/junit-jupiter-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.0.1/junit-jupiter-api-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/folaukaveinga/.m2/repository/org/junit/platform/junit-platform-commons/6.0.1/junit-platform-commons-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/folaukaveinga/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.0.1/junit-jupiter-params-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.0.1/junit-jupiter-engine-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/junit/platform/junit-platform-engine/6.0.1/junit-platform-engine-6.0.1.jar:/Users/folaukaveinga/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar:/Users/folaukaveinga/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.8/byte-buddy-agent-1.17.8.jar:/Users/folaukaveinga/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/folaukaveinga/.m2/repository/org/mockito/mockito-junit-jupiter/5.20.0/mockito-junit-jupiter-5.20.0.jar:/Users/folaukaveinga/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/folaukaveinga/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/folaukaveinga/.m2/repository/org/springframework/spring-test/7.0.1/spring-test-7.0.1.jar:/Users/folaukaveinga/.m2/repository/org/xmlunit/xmlunit-core/2.10.4/xmlunit-core-2.10.4.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-webmvc-test/4.0.0/spring-boot-webmvc-test-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-web-server/4.0.0/spring-boot-web-server-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-resttestclient/4.0.0/spring-boot-resttestclient-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-restclient/4.0.0/spring-boot-restclient-4.0.0.jar:/Users/folaukaveinga/.m2/repository/org/springframework/boot/spring-boot-http-client/4.0.0/spring-boot-http-client-4.0.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/folaukaveinga"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/amazon-corretto-21.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/folaukaveinga/Github/springboot-with-restclient"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/folaukaveinga/Github/springboot-with-restclient/target/surefire/surefirebooter-20251210233709373_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="com|*.com|localhost|*.localhost|citrixaccess.va.gov|*.citrixaccess.va.gov|citrixaccesspiv.va.gov|*.citrixaccesspiv.va.gov|citrixaccesstoken.va.gov|*.citrixaccesstoken.va.gov|max.gov|*.max.gov|www.aide.oit.va.gov|*.www.aide.oit.va.gov|apps.aide.oit.va.gov|*.apps.aide.oit.va.gov|vbms.va.gov|*.vbms.va.gov|abbott|*.abbott|abogado|*.abogado|ac|*.ac|academy|*.academy|accountant|*.accountant|accountants|*.accountants|active|*.active|actor|*.actor|ad|*.ad|ads|*.ads|ae|*.ae|aero|*.aero|aetna|*.aetna|af|*.af|afl|*.afl|ag|*.ag|agency|*.agency|ai|*.ai|airforce|*.airforce|al|*.al|allfinanz|*.allfinanz|alsace|*.alsace|am|*.am|amsterdam|*.amsterdam|an|*.an|android|*.android|ao|*.ao|apartments|*.apartments|aq|*.aq|aquarelle|*.aquarelle|ar|*.ar|archi|*.archi|army|*.army|arpa|*.arpa|as|*.as|asia|*.asia|associates|*.associates|at|*.at|attorney|*.attorney|au|*.au|auction|*.auction|audio|*.audio|autos|*.autos|aw|*.aw|ax|*.ax|axa|*.axa|az|*.az|ba|*.ba|band|*.band|bank|*.bank|barclaycard|*.barclaycard|barclays|*.barclays|bargains|*.bargains|bauhaus|*.bauhaus|bayern|*.bayern|bb|*.bb|bbc|*.bbc|bd|*.bd|be|*.be|berlin|*.berlin|best|*.best|bf|*.bf|bg|*.bg|bh|*.bh|bi|*.bi|bid|*.bid|bike|*.bike|bingo|*.bingo|bio|*.bio|biz|*.biz|bj|*.bj|bl|*.bl|black|*.black|blackfriday|*.blackfriday|blog|*.blog|bloomberg|*.bloomberg|blue|*.blue|bm|*.bm|bmw|*.bmw|bn|*.bn|bnpparibas|*.bnpparibas|bo|*.bo|boats|*.boats|bond|*.bond|boo|*.boo|boutique|*.boutique|bq|*.bq|br|*.br|brussels|*.brussels|bs|*.bs|bt|*.bt|budapest|*.budapest|build|*.build|builders|*.builders|business|*.business|buzz|*.buzz|bv|*.bv|bw|*.bw|by|*.by|bz|*.bz|bzh|*.bzh|ca|*.ca|cab|*.cab|cafe|*.cafe|cal|*.cal|camera|*.camera|camp|*.camp|cancerresearch|*.cancerresearch|canon|*.canon|capetown|*.capetown|capital|*.capital|caravan|*.caravan|cards|*.cards|care|*.care|career|*.career|careers|*.careers|cartier|*.cartier|casa|*.casa|cash|*.cash|casino|*.casino|cat|*.cat|catering|*.catering|cbn|*.cbn|cbre|*.cbre|cc|*.cc|cd|*.cd|center|*.center|ceo|*.ceo|cern|*.cern|cf|*.cf|cfd|*.cfd|cg|*.cg|ch|*.ch|channel|*.channel|chase|*.chase|chat|*.chat|cheap|*.cheap|chloe|*.chloe|christmas|*.christmas|chrome|*.chrome|church|*.church|ci|*.ci|citic|*.citic|city|*.city|ck|*.ck|cl|*.cl|claims|*.claims|cleaning|*.cleaning|click|*.click|clinic|*.clinic|clothing|*.clothing|club|*.club|cm|*.cm|cn|*.cn|co|*.co|coach|*.coach|codes|*.codes|coffee|*.coffee|college|*.college|cologne|*.cologne|community|*.community|company|*.company|computer|*.computer|condos|*.condos|construction|*.construction|consulting|*.consulting|contractors|*.contractors|cooking|*.cooking|cool|*.cool|coop|*.coop|country|*.country|courses|*.courses|cr|*.cr|credit|*.credit|creditcard|*.creditcard|cricket|*.cricket|crs|*.crs|cruises|*.cruises|cu|*.cu|cuisinella|*.cuisinella|cv|*.cv|cw|*.cw|cx|*.cx|cy|*.cy|cymru|*.cymru|cyou|*.cyou|cz|*.cz|dabur|*.dabur|dad|*.dad|dance|*.dance|datsun|*.datsun|day|*.day|dclk|*.dclk|de|*.de|deals|*.deals|degree|*.degree|delivery|*.delivery|democrat|*.democrat|dental|*.dental|dentist|*.dentist|desi|*.desi|design|*.design|dev|*.dev|diamonds|*.diamonds|diet|*.diet|digital|*.digital|direct|*.direct|directory|*.directory|discount|*.discount|dj|*.dj|dk|*.dk|dm|*.dm|dnp|*.dnp|do|*.do|docs|*.docs|doha|*.doha|domains|*.domains|doosan|*.doosan|download|*.download|durban|*.durban|dvag|*.dvag|dz|*.dz|eat|*.eat|ec|*.ec|edu|*.edu|education|*.education|ee|*.ee|eg|*.eg|eh|*.eh|email|*.email|emerck|*.emerck|energy|*.energy|engineer|*.engineer|engineering|*.engineering|enterprises|*.enterprises|epson|*.epson|equipment|*.equipment|er|*.er|erni|*.erni|es|*.es|esq|*.esq|estate|*.estate|et|*.et|eu|*.eu|eurovision|*.eurovision|eus|*.eus|events|*.events|everbank|*.everbank|exchange|*.exchange|expert|*.expert|exposed|*.exposed|express|*.express|fail|*.fail|faith|*.faith|fan|*.fan|fans|*.fans|farm|*.farm|fashion|*.fashion|feedback|*.feedback|fi|*.fi|film|*.film|finance|*.finance|financial|*.financial|firmdale|*.firmdale|fish|*.fish|fishing|*.fishing|fit|*.fit|fitness|*.fitness|fj|*.fj|fk|*.fk|flights|*.flights|florist|*.florist|flowers|*.flowers|flsmidth|*.flsmidth|fly|*.fly|fm|*.fm|fo|*.fo|foo|*.foo|football|*.football|forex|*.forex|forsale|*.forsale|foundation|*.foundation|fr|*.fr|frl|*.frl|frogans|*.frogans|fund|*.fund|furniture|*.furniture|futbol|*.futbol|fyi|*.fyi|ga|*.ga|gal|*.gal|gallery|*.gallery|garden|*.garden|gb|*.gb|gbiz|*.gbiz|gd|*.gd|gdn|*.gdn|ge|*.ge|gent|*.gent|gf|*.gf|gg|*.gg|ggee|*.ggee|gh|*.gh|gi|*.gi|gift|*.gift|gifts|*.gifts|gives|*.gives|gl|*.gl|glass|*.glass|gle|*.gle|global|*.global|globo|*.globo|gm|*.gm|gmail|*.gmail|gmo|*.gmo|gmx|*.gmx|gn|*.gn|gold|*.gold|goldpoint|*.goldpoint|golf|*.golf|goo|*.goo|goog|*.goog|google|*.google|gop|*.gop|gp|*.gp|gq|*.gq|gr|*.gr|graphics|*.graphics|gratis|*.gratis|green|*.green|gripe|*.gripe|gs|*.gs|gt|*.gt|gu|*.gu|guge|*.guge|guide|*.guide|guitars|*.guitars|guru|*.guru|gw|*.gw|gy|*.gy|hamburg|*.hamburg|hangout|*.hangout|haus|*.haus|healthcare|*.healthcare|help|*.help|here|*.here|hermes|*.hermes|hiphop|*.hiphop|hiv|*.hiv|hk|*.hk|hm|*.hm|hn|*.hn|holdings|*.holdings|holiday|*.holiday|homes|*.homes|horse|*.horse|host|*.host|hosting|*.hosting|house|*.house|how|*.how|hr|*.hr|ht|*.ht|hu|*.hu|ibm|*.ibm|id|*.id|ie|*.ie|ifm|*.ifm|il|*.il|im|*.im|immo|*.immo|immobilien|*.immobilien|in|*.in|industries|*.industries|infiniti|*.infiniti|info|*.info|ing|*.ing|ink|*.ink|institute|*.institute|insure|*.insure|int|*.int|international|*.international|investments|*.investments|io|*.io|iq|*.iq|ir|*.ir|irish|*.irish|is|*.is|it|*.it|iwc|*.iwc|java|*.java|jcb|*.jcb|je|*.je|jetzt|*.jetzt|jm|*.jm|jo|*.jo|jobs|*.jobs|joburg|*.joburg|jp|*.jp|juegos|*.juegos|kaufen|*.kaufen|kddi|*.kddi|ke|*.ke|kg|*.kg|kh|*.kh|ki|*.ki|kim|*.kim|kitchen|*.kitchen|kiwi|*.kiwi|km|*.km|kn|*.kn|koeln|*.koeln|komatsu|*.komatsu|kp|*.kp|kr|*.kr|krd|*.krd|kred|*.kred|kw|*.kw|ky|*.ky|kyoto|*.kyoto|kz|*.kz|la|*.la|lacaixa|*.lacaixa|land|*.land|lat|*.lat|latrobe|*.latrobe|lawyer|*.lawyer|lb|*.lb|lc|*.lc|lds|*.lds|lease|*.lease|leclerc|*.leclerc|legal|*.legal|lgbt|*.lgbt|li|*.li|lidl|*.lidl|life|*.life|lighting|*.lighting|limited|*.limited|limo|*.limo|link|*.link|lk|*.lk|loan|*.loan|loans|*.loans|local|*.local|london|*.london|lotte|*.lotte|lotto|*.lotto|lr|*.lr|ls|*.ls|lt|*.lt|ltda|*.ltda|lu|*.lu|luxe|*.luxe|luxury|*.luxury|lv|*.lv|ly|*.ly|ma|*.ma|madrid|*.madrid|maif|*.maif|maison|*.maison|management|*.management|mango|*.mango|market|*.market|marketing|*.marketing|markets|*.markets|marriott|*.marriott|mc|*.mc|me|*.me|media|*.media|meet|*.meet|melbourne|*.melbourne|meme|*.meme|memorial|*.memorial|menu|*.menu|mf|*.mf|mg|*.mg|mh|*.mh|miami|*.miami|mil|*.mil|mini|*.mini|mk|*.mk|ml|*.ml|mm|*.mm|mma|*.mma|mn|*.mn|mo|*.mo|mobi|*.mobi|moda|*.moda|moe|*.moe|monash|*.monash|money|*.money|mormon|*.mormon|mortgage|*.mortgage|moscow|*.moscow|motorcycles|*.motorcycles|mov|*.mov|movie|*.movie|mp|*.mp|mq|*.mq|mr|*.mr|ms|*.ms|mt|*.mt|mtn|*.mtn|mtpc|*.mtpc|mu|*.mu|museum|*.museum|mv|*.mv|mw|*.mw|mx|*.mx|my|*.my|mz|*.mz|na|*.na|nagoya|*.nagoya|name|*.name|navy|*.navy|nc|*.nc|ne|*.ne|net|*.net|network|*.network|neustar|*.neustar|new|*.new|news|*.news|nexus|*.nexus|nf|*.nf|ng|*.ng|ngo|*.ngo|nhk|*.nhk|ni|*.ni|nico|*.nico|ninja|*.ninja|nissan|*.nissan|nl|*.nl|no|*.no|np|*.np|nr|*.nr|nrw|*.nrw|ntt|*.ntt|nu|*.nu|nyc|*.nyc|nz|*.nz|okinawa|*.okinawa|om|*.om|one|*.one|ong|*.ong|onl|*.onl|online|*.online|ooo|*.ooo|org|*.org|organic|*.organic|osaka|*.osaka|otsuka|*.otsuka|ovh|*.ovh|pa|*.pa|page|*.page|panerai|*.panerai|paris|*.paris|partners|*.partners|parts|*.parts|pe|*.pe|pf|*.pf|pg|*.pg|ph|*.ph|pharmacy|*.pharmacy|photo|*.photo|photography|*.photography|photos|*.photos|physio|*.physio|piaget|*.piaget|pics|*.pics|pictet|*.pictet|pictures|*.pictures|pink|*.pink|pizza|*.pizza|pk|*.pk|pl|*.pl|place|*.place|plumbing|*.plumbing|plus|*.plus|pm|*.pm|pn|*.pn|pohl|*.pohl|post|*.post|pr|*.pr|praxi|*.praxi|press|*.press|pro|*.pro|prod|*.prod|productions|*.productions|prof|*.prof|properties|*.properties|property|*.property|ps|*.ps|pt|*.pt|pub|*.pub|pw|*.pw|py|*.py|qa|*.qa|qpon|*.qpon|quebec|*.quebec|racing|*.racing|re|*.re|realtor|*.realtor|recipes|*.recipes|red|*.red|redstone|*.redstone|rehab|*.rehab|reise|*.reise|reisen|*.reisen|reit|*.reit|ren|*.ren|rentals|*.rentals|repair|*.repair|report|*.report|republican|*.republican|rest|*.rest|restaurant|*.restaurant|review|*.review|reviews|*.reviews|rich|*.rich|rio|*.rio|rip|*.rip|ro|*.ro|rocks|*.rocks|rodeo|*.rodeo|rs|*.rs|rsvp|*.rsvp|ru|*.ru|ruhr|*.ruhr|rw|*.rw|ryukyu|*.ryukyu|sa|*.sa|saarland|*.saarland|sale|*.sale|samsung|*.samsung|sap|*.sap|sarl|*.sarl|saxo|*.saxo|sb|*.sb|sc|*.sc|sca|*.sca|scb|*.scb|schmidt|*.schmidt|scholarships|*.scholarships|school|*.school|schule|*.schule|schwarz|*.schwarz|science|*.science|scot|*.scot|sd|*.sd|se|*.se|services|*.services|sew|*.sew|sg|*.sg|sh|*.sh|shiksha|*.shiksha|shoes|*.shoes|shriram|*.shriram|si|*.si|site|*.site|sj|*.sj|sk|*.sk|sky|*.sky|sl|*.sl|slack|*.slack|sm|*.sm|sn|*.sn|so|*.so|social|*.social|software|*.software|sohu|*.sohu|solar|*.solar|solutions|*.solutions|soy|*.soy|space|*.space|spiegel|*.spiegel|sr|*.sr|ss|*.ss|st|*.st|study|*.study|style|*.style|su|*.su|supplies|*.supplies|supply|*.supply|support|*.support|surf|*.surf|surgery|*.surgery|suzuki|*.suzuki|sv|*.sv|sx|*.sx|sy|*.sy|sydney|*.sydney|systems|*.systems|sz|*.sz|taipei|*.taipei|tatar|*.tatar|tattoo|*.tattoo|tax|*.tax|tc|*.tc|td|*.td|tech|*.tech|technology|*.technology|tel|*.tel|temasek|*.temasek|tennis|*.tennis|tf|*.tf|tg|*.tg|th|*.th|tickets|*.tickets|tienda|*.tienda|tips|*.tips|tires|*.tires|tirol|*.tirol|tj|*.tj|tk|*.tk|tl|*.tl|tm|*.tm|tn|*.tn|to|*.to|today|*.today|tokyo|*.tokyo|tools|*.tools|top|*.top|toshiba|*.toshiba|tours|*.tours|town|*.town|toys|*.toys|tp|*.tp|tr|*.tr|trade|*.trade|trading|*.trading|training|*.training|travel|*.travel|trust|*.trust|tt|*.tt|tui|*.tui|tv|*.tv|tw|*.tw|tz|*.tz|ua|*.ua|ug|*.ug|uk|*.uk|um|*.um|university|*.university|uno|*.uno|uol|*.uol|us|*.us|uy|*.uy|uz|*.uz|va|*.va|vacations|*.vacations|vc|*.vc|ve|*.ve|vegas|*.vegas|ventures|*.ventures|versicherung|*.versicherung|vet|*.vet|vg|*.vg|vi|*.vi|viajes|*.viajes|video|*.video|villas|*.villas|vision|*.vision|vlaanderen|*.vlaanderen|vn|*.vn|vote|*.vote|voting|*.voting|voto|*.voto|voyage|*.voyage|vu|*.vu|wales|*.wales|wang|*.wang|watch|*.watch|website|*.website|wed|*.wed|wedding|*.wedding|wf|*.wf|whoswho|*.whoswho|wien|*.wien|wiki|*.wiki|williamhill|*.williamhill|win|*.win|wme|*.wme|work|*.work|works|*.works|world|*.world|ws|*.ws|wtc|*.wtc|wtf|*.wtf|xin|*.xin|xyz|*.xyz|yachts|*.yachts|yandex|*.yandex|ye|*.ye|yodobashi|*.yodobashi|yoga|*.yoga|yokohama|*.yokohama|youtube|*.youtube|yt|*.yt|za|*.za|zip|*.zip|zm|*.zm|zone|*.zone|zuerich|*.zuerich|zw|*.zw"/>
+    <property name="java.runtime.version" value="21.0.7+6-LTS"/>
+    <property name="user.name" value="folaukaveinga"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-21.0.7.6.1"/>
+    <property name="localRepository" value="/Users/folaukaveinga/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-21/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/15/tcbrjz5566934nb93yrzv6680000gn/T/"/>
+    <property name="idea.version" value="2024.2.4"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/Users/folaukaveinga/Github/springboot-with-restclient"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="43156"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/folaukaveinga/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="21.0.7+6-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="com|*.com|localhost|*.localhost|citrixaccess.va.gov|*.citrixaccess.va.gov|citrixaccesspiv.va.gov|*.citrixaccesspiv.va.gov|citrixaccesstoken.va.gov|*.citrixaccesstoken.va.gov|max.gov|*.max.gov|www.aide.oit.va.gov|*.www.aide.oit.va.gov|apps.aide.oit.va.gov|*.apps.aide.oit.va.gov|vbms.va.gov|*.vbms.va.gov|abbott|*.abbott|abogado|*.abogado|ac|*.ac|academy|*.academy|accountant|*.accountant|accountants|*.accountants|active|*.active|actor|*.actor|ad|*.ad|ads|*.ads|ae|*.ae|aero|*.aero|aetna|*.aetna|af|*.af|afl|*.afl|ag|*.ag|agency|*.agency|ai|*.ai|airforce|*.airforce|al|*.al|allfinanz|*.allfinanz|alsace|*.alsace|am|*.am|amsterdam|*.amsterdam|an|*.an|android|*.android|ao|*.ao|apartments|*.apartments|aq|*.aq|aquarelle|*.aquarelle|ar|*.ar|archi|*.archi|army|*.army|arpa|*.arpa|as|*.as|asia|*.asia|associates|*.associates|at|*.at|attorney|*.attorney|au|*.au|auction|*.auction|audio|*.audio|autos|*.autos|aw|*.aw|ax|*.ax|axa|*.axa|az|*.az|ba|*.ba|band|*.band|bank|*.bank|barclaycard|*.barclaycard|barclays|*.barclays|bargains|*.bargains|bauhaus|*.bauhaus|bayern|*.bayern|bb|*.bb|bbc|*.bbc|bd|*.bd|be|*.be|berlin|*.berlin|best|*.best|bf|*.bf|bg|*.bg|bh|*.bh|bi|*.bi|bid|*.bid|bike|*.bike|bingo|*.bingo|bio|*.bio|biz|*.biz|bj|*.bj|bl|*.bl|black|*.black|blackfriday|*.blackfriday|blog|*.blog|bloomberg|*.bloomberg|blue|*.blue|bm|*.bm|bmw|*.bmw|bn|*.bn|bnpparibas|*.bnpparibas|bo|*.bo|boats|*.boats|bond|*.bond|boo|*.boo|boutique|*.boutique|bq|*.bq|br|*.br|brussels|*.brussels|bs|*.bs|bt|*.bt|budapest|*.budapest|build|*.build|builders|*.builders|business|*.business|buzz|*.buzz|bv|*.bv|bw|*.bw|by|*.by|bz|*.bz|bzh|*.bzh|ca|*.ca|cab|*.cab|cafe|*.cafe|cal|*.cal|camera|*.camera|camp|*.camp|cancerresearch|*.cancerresearch|canon|*.canon|capetown|*.capetown|capital|*.capital|caravan|*.caravan|cards|*.cards|care|*.care|career|*.career|careers|*.careers|cartier|*.cartier|casa|*.casa|cash|*.cash|casino|*.casino|cat|*.cat|catering|*.catering|cbn|*.cbn|cbre|*.cbre|cc|*.cc|cd|*.cd|center|*.center|ceo|*.ceo|cern|*.cern|cf|*.cf|cfd|*.cfd|cg|*.cg|ch|*.ch|channel|*.channel|chase|*.chase|chat|*.chat|cheap|*.cheap|chloe|*.chloe|christmas|*.christmas|chrome|*.chrome|church|*.church|ci|*.ci|citic|*.citic|city|*.city|ck|*.ck|cl|*.cl|claims|*.claims|cleaning|*.cleaning|click|*.click|clinic|*.clinic|clothing|*.clothing|club|*.club|cm|*.cm|cn|*.cn|co|*.co|coach|*.coach|codes|*.codes|coffee|*.coffee|college|*.college|cologne|*.cologne|community|*.community|company|*.company|computer|*.computer|condos|*.condos|construction|*.construction|consulting|*.consulting|contractors|*.contractors|cooking|*.cooking|cool|*.cool|coop|*.coop|country|*.country|courses|*.courses|cr|*.cr|credit|*.credit|creditcard|*.creditcard|cricket|*.cricket|crs|*.crs|cruises|*.cruises|cu|*.cu|cuisinella|*.cuisinella|cv|*.cv|cw|*.cw|cx|*.cx|cy|*.cy|cymru|*.cymru|cyou|*.cyou|cz|*.cz|dabur|*.dabur|dad|*.dad|dance|*.dance|datsun|*.datsun|day|*.day|dclk|*.dclk|de|*.de|deals|*.deals|degree|*.degree|delivery|*.delivery|democrat|*.democrat|dental|*.dental|dentist|*.dentist|desi|*.desi|design|*.design|dev|*.dev|diamonds|*.diamonds|diet|*.diet|digital|*.digital|direct|*.direct|directory|*.directory|discount|*.discount|dj|*.dj|dk|*.dk|dm|*.dm|dnp|*.dnp|do|*.do|docs|*.docs|doha|*.doha|domains|*.domains|doosan|*.doosan|download|*.download|durban|*.durban|dvag|*.dvag|dz|*.dz|eat|*.eat|ec|*.ec|edu|*.edu|education|*.education|ee|*.ee|eg|*.eg|eh|*.eh|email|*.email|emerck|*.emerck|energy|*.energy|engineer|*.engineer|engineering|*.engineering|enterprises|*.enterprises|epson|*.epson|equipment|*.equipment|er|*.er|erni|*.erni|es|*.es|esq|*.esq|estate|*.estate|et|*.et|eu|*.eu|eurovision|*.eurovision|eus|*.eus|events|*.events|everbank|*.everbank|exchange|*.exchange|expert|*.expert|exposed|*.exposed|express|*.express|fail|*.fail|faith|*.faith|fan|*.fan|fans|*.fans|farm|*.farm|fashion|*.fashion|feedback|*.feedback|fi|*.fi|film|*.film|finance|*.finance|financial|*.financial|firmdale|*.firmdale|fish|*.fish|fishing|*.fishing|fit|*.fit|fitness|*.fitness|fj|*.fj|fk|*.fk|flights|*.flights|florist|*.florist|flowers|*.flowers|flsmidth|*.flsmidth|fly|*.fly|fm|*.fm|fo|*.fo|foo|*.foo|football|*.football|forex|*.forex|forsale|*.forsale|foundation|*.foundation|fr|*.fr|frl|*.frl|frogans|*.frogans|fund|*.fund|furniture|*.furniture|futbol|*.futbol|fyi|*.fyi|ga|*.ga|gal|*.gal|gallery|*.gallery|garden|*.garden|gb|*.gb|gbiz|*.gbiz|gd|*.gd|gdn|*.gdn|ge|*.ge|gent|*.gent|gf|*.gf|gg|*.gg|ggee|*.ggee|gh|*.gh|gi|*.gi|gift|*.gift|gifts|*.gifts|gives|*.gives|gl|*.gl|glass|*.glass|gle|*.gle|global|*.global|globo|*.globo|gm|*.gm|gmail|*.gmail|gmo|*.gmo|gmx|*.gmx|gn|*.gn|gold|*.gold|goldpoint|*.goldpoint|golf|*.golf|goo|*.goo|goog|*.goog|google|*.google|gop|*.gop|gp|*.gp|gq|*.gq|gr|*.gr|graphics|*.graphics|gratis|*.gratis|green|*.green|gripe|*.gripe|gs|*.gs|gt|*.gt|gu|*.gu|guge|*.guge|guide|*.guide|guitars|*.guitars|guru|*.guru|gw|*.gw|gy|*.gy|hamburg|*.hamburg|hangout|*.hangout|haus|*.haus|healthcare|*.healthcare|help|*.help|here|*.here|hermes|*.hermes|hiphop|*.hiphop|hiv|*.hiv|hk|*.hk|hm|*.hm|hn|*.hn|holdings|*.holdings|holiday|*.holiday|homes|*.homes|horse|*.horse|host|*.host|hosting|*.hosting|house|*.house|how|*.how|hr|*.hr|ht|*.ht|hu|*.hu|ibm|*.ibm|id|*.id|ie|*.ie|ifm|*.ifm|il|*.il|im|*.im|immo|*.immo|immobilien|*.immobilien|in|*.in|industries|*.industries|infiniti|*.infiniti|info|*.info|ing|*.ing|ink|*.ink|institute|*.institute|insure|*.insure|int|*.int|international|*.international|investments|*.investments|io|*.io|iq|*.iq|ir|*.ir|irish|*.irish|is|*.is|it|*.it|iwc|*.iwc|java|*.java|jcb|*.jcb|je|*.je|jetzt|*.jetzt|jm|*.jm|jo|*.jo|jobs|*.jobs|joburg|*.joburg|jp|*.jp|juegos|*.juegos|kaufen|*.kaufen|kddi|*.kddi|ke|*.ke|kg|*.kg|kh|*.kh|ki|*.ki|kim|*.kim|kitchen|*.kitchen|kiwi|*.kiwi|km|*.km|kn|*.kn|koeln|*.koeln|komatsu|*.komatsu|kp|*.kp|kr|*.kr|krd|*.krd|kred|*.kred|kw|*.kw|ky|*.ky|kyoto|*.kyoto|kz|*.kz|la|*.la|lacaixa|*.lacaixa|land|*.land|lat|*.lat|latrobe|*.latrobe|lawyer|*.lawyer|lb|*.lb|lc|*.lc|lds|*.lds|lease|*.lease|leclerc|*.leclerc|legal|*.legal|lgbt|*.lgbt|li|*.li|lidl|*.lidl|life|*.life|lighting|*.lighting|limited|*.limited|limo|*.limo|link|*.link|lk|*.lk|loan|*.loan|loans|*.loans|local|*.local|london|*.london|lotte|*.lotte|lotto|*.lotto|lr|*.lr|ls|*.ls|lt|*.lt|ltda|*.ltda|lu|*.lu|luxe|*.luxe|luxury|*.luxury|lv|*.lv|ly|*.ly|ma|*.ma|madrid|*.madrid|maif|*.maif|maison|*.maison|management|*.management|mango|*.mango|market|*.market|marketing|*.marketing|markets|*.markets|marriott|*.marriott|mc|*.mc|me|*.me|media|*.media|meet|*.meet|melbourne|*.melbourne|meme|*.meme|memorial|*.memorial|menu|*.menu|mf|*.mf|mg|*.mg|mh|*.mh|miami|*.miami|mil|*.mil|mini|*.mini|mk|*.mk|ml|*.ml|mm|*.mm|mma|*.mma|mn|*.mn|mo|*.mo|mobi|*.mobi|moda|*.moda|moe|*.moe|monash|*.monash|money|*.money|mormon|*.mormon|mortgage|*.mortgage|moscow|*.moscow|motorcycles|*.motorcycles|mov|*.mov|movie|*.movie|mp|*.mp|mq|*.mq|mr|*.mr|ms|*.ms|mt|*.mt|mtn|*.mtn|mtpc|*.mtpc|mu|*.mu|museum|*.museum|mv|*.mv|mw|*.mw|mx|*.mx|my|*.my|mz|*.mz|na|*.na|nagoya|*.nagoya|name|*.name|navy|*.navy|nc|*.nc|ne|*.ne|net|*.net|network|*.network|neustar|*.neustar|new|*.new|news|*.news|nexus|*.nexus|nf|*.nf|ng|*.ng|ngo|*.ngo|nhk|*.nhk|ni|*.ni|nico|*.nico|ninja|*.ninja|nissan|*.nissan|nl|*.nl|no|*.no|np|*.np|nr|*.nr|nrw|*.nrw|ntt|*.ntt|nu|*.nu|nyc|*.nyc|nz|*.nz|okinawa|*.okinawa|om|*.om|one|*.one|ong|*.ong|onl|*.onl|online|*.online|ooo|*.ooo|org|*.org|organic|*.organic|osaka|*.osaka|otsuka|*.otsuka|ovh|*.ovh|pa|*.pa|page|*.page|panerai|*.panerai|paris|*.paris|partners|*.partners|parts|*.parts|pe|*.pe|pf|*.pf|pg|*.pg|ph|*.ph|pharmacy|*.pharmacy|photo|*.photo|photography|*.photography|photos|*.photos|physio|*.physio|piaget|*.piaget|pics|*.pics|pictet|*.pictet|pictures|*.pictures|pink|*.pink|pizza|*.pizza|pk|*.pk|pl|*.pl|place|*.place|plumbing|*.plumbing|plus|*.plus|pm|*.pm|pn|*.pn|pohl|*.pohl|post|*.post|pr|*.pr|praxi|*.praxi|press|*.press|pro|*.pro|prod|*.prod|productions|*.productions|prof|*.prof|properties|*.properties|property|*.property|ps|*.ps|pt|*.pt|pub|*.pub|pw|*.pw|py|*.py|qa|*.qa|qpon|*.qpon|quebec|*.quebec|racing|*.racing|re|*.re|realtor|*.realtor|recipes|*.recipes|red|*.red|redstone|*.redstone|rehab|*.rehab|reise|*.reise|reisen|*.reisen|reit|*.reit|ren|*.ren|rentals|*.rentals|repair|*.repair|report|*.report|republican|*.republican|rest|*.rest|restaurant|*.restaurant|review|*.review|reviews|*.reviews|rich|*.rich|rio|*.rio|rip|*.rip|ro|*.ro|rocks|*.rocks|rodeo|*.rodeo|rs|*.rs|rsvp|*.rsvp|ru|*.ru|ruhr|*.ruhr|rw|*.rw|ryukyu|*.ryukyu|sa|*.sa|saarland|*.saarland|sale|*.sale|samsung|*.samsung|sap|*.sap|sarl|*.sarl|saxo|*.saxo|sb|*.sb|sc|*.sc|sca|*.sca|scb|*.scb|schmidt|*.schmidt|scholarships|*.scholarships|school|*.school|schule|*.schule|schwarz|*.schwarz|science|*.science|scot|*.scot|sd|*.sd|se|*.se|services|*.services|sew|*.sew|sg|*.sg|sh|*.sh|shiksha|*.shiksha|shoes|*.shoes|shriram|*.shriram|si|*.si|site|*.site|sj|*.sj|sk|*.sk|sky|*.sky|sl|*.sl|slack|*.slack|sm|*.sm|sn|*.sn|so|*.so|social|*.social|software|*.software|sohu|*.sohu|solar|*.solar|solutions|*.solutions|soy|*.soy|space|*.space|spiegel|*.spiegel|sr|*.sr|ss|*.ss|st|*.st|study|*.study|style|*.style|su|*.su|supplies|*.supplies|supply|*.supply|support|*.support|surf|*.surf|surgery|*.surgery|suzuki|*.suzuki|sv|*.sv|sx|*.sx|sy|*.sy|sydney|*.sydney|systems|*.systems|sz|*.sz|taipei|*.taipei|tatar|*.tatar|tattoo|*.tattoo|tax|*.tax|tc|*.tc|td|*.td|tech|*.tech|technology|*.technology|tel|*.tel|temasek|*.temasek|tennis|*.tennis|tf|*.tf|tg|*.tg|th|*.th|tickets|*.tickets|tienda|*.tienda|tips|*.tips|tires|*.tires|tirol|*.tirol|tj|*.tj|tk|*.tk|tl|*.tl|tm|*.tm|tn|*.tn|to|*.to|today|*.today|tokyo|*.tokyo|tools|*.tools|top|*.top|toshiba|*.toshiba|tours|*.tours|town|*.town|toys|*.toys|tp|*.tp|tr|*.tr|trade|*.trade|trading|*.trading|training|*.training|travel|*.travel|trust|*.trust|tt|*.tt|tui|*.tui|tv|*.tv|tw|*.tw|tz|*.tz|ua|*.ua|ug|*.ug|uk|*.uk|um|*.um|university|*.university|uno|*.uno|uol|*.uol|us|*.us|uy|*.uy|uz|*.uz|va|*.va|vacations|*.vacations|vc|*.vc|ve|*.ve|vegas|*.vegas|ventures|*.ventures|versicherung|*.versicherung|vet|*.vet|vg|*.vg|vi|*.vi|viajes|*.viajes|video|*.video|villas|*.villas|vision|*.vision|vlaanderen|*.vlaanderen|vn|*.vn|vote|*.vote|voting|*.voting|voto|*.voto|voyage|*.voyage|vu|*.vu|wales|*.wales|wang|*.wang|watch|*.watch|website|*.website|wed|*.wed|wedding|*.wedding|wf|*.wf|whoswho|*.whoswho|wien|*.wien|wiki|*.wiki|williamhill|*.williamhill|win|*.win|wme|*.wme|work|*.work|works|*.works|world|*.world|ws|*.ws|wtc|*.wtc|wtf|*.wtf|xin|*.xin|xyz|*.xyz|yachts|*.yachts|yandex|*.yandex|ye|*.ye|yodobashi|*.yodobashi|yoga|*.yoga|yokohama|*.yokohama|youtube|*.youtube|yt|*.yt|za|*.za|zip|*.zip|zm|*.zm|zone|*.zone|zuerich|*.zuerich|zw|*.zw"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[springboot-with-restclient] "/>
+  </properties>
+  <testcase name="testPutWithResponseEntity" classname="PUT Request Examples" time="0.076">
+    <system-out><![CDATA[2025-12-10T23:37:11.185-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : 
+
+========== TEST: PUT with ResponseEntity ==========
+
+2025-12-10T23:37:11.186-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= REQUEST =============================
+2025-12-10T23:37:11.186-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : URI         : https://jsonplaceholder.typicode.com/posts/1
+2025-12-10T23:37:11.186-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Method      : PUT
+2025-12-10T23:37:11.186-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Content-Type:"application/json", Accept:"application/json", Content-Length:"66"]
+2025-12-10T23:37:11.186-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {"id":1,"userId":1,"title":"Another Update","body":"Updated body"}
+2025-12-10T23:37:11.186-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= RESPONSE ============================
+2025-12-10T23:37:11.255-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Code : 200 OK
+2025-12-10T23:37:11.256-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Text : OK
+2025-12-10T23:37:11.256-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Date:"Thu, 11 Dec 2025 06:37:11 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"83", Connection:"keep-alive", access-control-allow-credentials:"true", Cache-Control:"no-cache", etag:"W/"53-Glbn/4xlgL4CHQmpcNcG8JAtBQ8"", expires:"-1", nel:"{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}", pragma:"no-cache", report-to:"{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=IsE30ljxqY6hw9pphsJ%2BjxlBKxbrwGeQEqFDYrJT6Lc%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1765435031"}],"max_age":3600}", reporting-endpoints:"heroku-nel="https://nel.heroku.com/reports?s=IsE30ljxqY6hw9pphsJ%2BjxlBKxbrwGeQEqFDYrJT6Lc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1765435031"", Server:"cloudflare", vary:"Origin, Accept-Encoding", via:"2.0 heroku-router", x-content-type-options:"nosniff", x-powered-by:"Express", x-ratelimit-limit:"1000", x-ratelimit-remaining:"997", x-ratelimit-reset:"1765435086", cf-cache-status:"DYNAMIC", CF-RAY:"9ac2f8d15932e75f-DEN", alt-svc:"h3=":443"; ma=86400"]
+2025-12-10T23:37:11.256-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {
+  "id": 1,
+  "userId": 1,
+  "title": "Another Update",
+  "body": "Updated body"
+}
+2025-12-10T23:37:11.256-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ===================================================================
+2025-12-10T23:37:11.259-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Response status: 200 OK
+]]></system-out>
+  </testcase>
+  <testcase name="testPutUpdateResource" classname="PUT Request Examples" time="0.073">
+    <system-out><![CDATA[2025-12-10T23:37:11.261-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : 
+
+========== TEST: PUT Update Resource ==========
+
+2025-12-10T23:37:11.262-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= REQUEST =============================
+2025-12-10T23:37:11.262-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : URI         : https://jsonplaceholder.typicode.com/posts/1
+2025-12-10T23:37:11.262-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Method      : PUT
+2025-12-10T23:37:11.262-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Content-Type:"application/json", Accept:"application/json", Content-Length:"90"]
+2025-12-10T23:37:11.262-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {"id":1,"userId":1,"title":"Updated Post Title","body":"This is the updated body content"}
+2025-12-10T23:37:11.263-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= RESPONSE ============================
+2025-12-10T23:37:11.331-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Code : 200 OK
+2025-12-10T23:37:11.331-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Text : OK
+2025-12-10T23:37:11.331-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Date:"Thu, 11 Dec 2025 06:37:11 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"107", Connection:"keep-alive", access-control-allow-credentials:"true", Cache-Control:"no-cache", etag:"W/"6b-pw1zWDucK9tWWINI7LCOCNJMFYI"", expires:"-1", nel:"{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}", pragma:"no-cache", report-to:"{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=IsE30ljxqY6hw9pphsJ%2BjxlBKxbrwGeQEqFDYrJT6Lc%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1765435031"}],"max_age":3600}", reporting-endpoints:"heroku-nel="https://nel.heroku.com/reports?s=IsE30ljxqY6hw9pphsJ%2BjxlBKxbrwGeQEqFDYrJT6Lc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1765435031"", Server:"cloudflare", vary:"Origin, Accept-Encoding", via:"2.0 heroku-router", x-content-type-options:"nosniff", x-powered-by:"Express", x-ratelimit-limit:"1000", x-ratelimit-remaining:"996", x-ratelimit-reset:"1765435086", cf-cache-status:"DYNAMIC", CF-RAY:"9ac2f8d1ca46e75f-DEN", alt-svc:"h3=":443"; ma=86400"]
+2025-12-10T23:37:11.332-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {
+  "id": 1,
+  "userId": 1,
+  "title": "Updated Post Title",
+  "body": "This is the updated body content"
+}
+2025-12-10T23:37:11.332-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ===================================================================
+2025-12-10T23:37:11.333-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Updated post: Post(id=1, userId=1, title=Updated Post Title, body=This is the updated body content)
+]]></system-out>
+  </testcase>
+  <testcase name="testPostCreateResource" classname="POST Request Examples" time="0.073">
+    <system-out><![CDATA[2025-12-10T23:37:11.336-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : 
+
+========== TEST: POST Create Resource ==========
+
+2025-12-10T23:37:11.337-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= REQUEST =============================
+2025-12-10T23:37:11.337-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : URI         : https://jsonplaceholder.typicode.com/posts
+2025-12-10T23:37:11.337-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Method      : POST
+2025-12-10T23:37:11.337-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Content-Type:"application/json", Accept:"application/json", Content-Length:"114"]
+2025-12-10T23:37:11.337-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {"id":null,"userId":1,"title":"My New Post Title","body":"This is the body of my new post created via RestClient"}
+2025-12-10T23:37:11.338-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= RESPONSE ============================
+2025-12-10T23:37:11.407-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Code : 201 CREATED
+2025-12-10T23:37:11.407-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Text : Created
+2025-12-10T23:37:11.407-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Date:"Thu, 11 Dec 2025 06:37:11 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"130", Connection:"keep-alive", access-control-allow-credentials:"true", access-control-expose-headers:"Location", Cache-Control:"no-cache", etag:"W/"82-/dmYOUDnT4UG5OGtF220oLu8eE4"", expires:"-1", location:"https://jsonplaceholder.typicode.com/posts/101", nel:"{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}", pragma:"no-cache", report-to:"{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=IsE30ljxqY6hw9pphsJ%2BjxlBKxbrwGeQEqFDYrJT6Lc%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1765435031"}],"max_age":3600}", reporting-endpoints:"heroku-nel="https://nel.heroku.com/reports?s=IsE30ljxqY6hw9pphsJ%2BjxlBKxbrwGeQEqFDYrJT6Lc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1765435031"", Server:"cloudflare", vary:"Origin, X-HTTP-Method-Override, Accept-Encoding", via:"2.0 heroku-router", x-content-type-options:"nosniff", x-powered-by:"Express", x-ratelimit-limit:"1000", x-ratelimit-remaining:"995", x-ratelimit-reset:"1765435086", cf-cache-status:"DYNAMIC", CF-RAY:"9ac2f8d24b5de75f-DEN", alt-svc:"h3=":443"; ma=86400"]
+2025-12-10T23:37:11.407-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {
+  "id": 101,
+  "userId": 1,
+  "title": "My New Post Title",
+  "body": "This is the body of my new post created via RestClient"
+}
+2025-12-10T23:37:11.407-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ===================================================================
+2025-12-10T23:37:11.408-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Created post with id: 101
+]]></system-out>
+  </testcase>
+  <testcase name="testPostWithResponseEntity" classname="POST Request Examples" time="0.065">
+    <system-out><![CDATA[2025-12-10T23:37:11.410-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : 
+
+========== TEST: POST with ResponseEntity ==========
+
+2025-12-10T23:37:11.411-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= REQUEST =============================
+2025-12-10T23:37:11.411-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : URI         : https://jsonplaceholder.typicode.com/posts
+2025-12-10T23:37:11.411-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Method      : POST
+2025-12-10T23:37:11.411-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Content-Type:"application/json", Accept:"application/json", Content-Length:"72"]
+2025-12-10T23:37:11.411-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {"id":null,"userId":1,"title":"Another Post","body":"Body content here"}
+2025-12-10T23:37:11.413-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= RESPONSE ============================
+2025-12-10T23:37:11.472-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Code : 201 CREATED
+2025-12-10T23:37:11.472-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Text : Created
+2025-12-10T23:37:11.473-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Date:"Thu, 11 Dec 2025 06:37:11 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"88", Connection:"keep-alive", access-control-allow-credentials:"true", access-control-expose-headers:"Location", Cache-Control:"no-cache", etag:"W/"58-Fdme+hjexuaTw4+Vy9D4axYkiNk"", expires:"-1", location:"https://jsonplaceholder.typicode.com/posts/101", nel:"{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}", pragma:"no-cache", report-to:"{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=IsE30ljxqY6hw9pphsJ%2BjxlBKxbrwGeQEqFDYrJT6Lc%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1765435031"}],"max_age":3600}", reporting-endpoints:"heroku-nel="https://nel.heroku.com/reports?s=IsE30ljxqY6hw9pphsJ%2BjxlBKxbrwGeQEqFDYrJT6Lc%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1765435031"", Server:"cloudflare", vary:"Origin, X-HTTP-Method-Override, Accept-Encoding", via:"2.0 heroku-router", x-content-type-options:"nosniff", x-powered-by:"Express", x-ratelimit-limit:"1000", x-ratelimit-remaining:"994", x-ratelimit-reset:"1765435086", cf-cache-status:"DYNAMIC", CF-RAY:"9ac2f8d2bc36e75f-DEN", alt-svc:"h3=":443"; ma=86400"]
+2025-12-10T23:37:11.473-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {
+  "id": 101,
+  "userId": 1,
+  "title": "Another Post",
+  "body": "Body content here"
+}
+2025-12-10T23:37:11.473-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ===================================================================
+2025-12-10T23:37:11.474-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Response status: 201 CREATED
+]]></system-out>
+  </testcase>
+  <testcase name="testCustomTimeouts" classname="Timeout Configuration Examples" time="0.039">
+    <system-out><![CDATA[2025-12-10T23:37:11.477-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : 
+
+========== TEST: Custom Timeout Configuration ==========
+
+2025-12-10T23:37:11.514-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Request completed within timeout limits
+2025-12-10T23:37:11.515-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Connection timeout: 3 seconds
+2025-12-10T23:37:11.515-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Read timeout: 5 seconds
+]]></system-out>
+  </testcase>
+  <testcase name="testGetWithQueryParameters" classname="GET Request Examples" time="0.032">
+    <system-out><![CDATA[2025-12-10T23:37:11.517-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : 
+
+========== TEST: GET with Query Parameters ==========
+
+2025-12-10T23:37:11.518-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= REQUEST =============================
+2025-12-10T23:37:11.518-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : URI         : https://jsonplaceholder.typicode.com/posts?userId=1
+2025-12-10T23:37:11.518-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Method      : GET
+2025-12-10T23:37:11.518-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Accept:"application/json", Content-Length:"0"]
+2025-12-10T23:37:11.545-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= RESPONSE ============================
+2025-12-10T23:37:11.545-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Code : 200 OK
+2025-12-10T23:37:11.545-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Text : OK
+2025-12-10T23:37:11.546-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Date:"Thu, 11 Dec 2025 06:37:11 GMT", Content-Type:"application/json; charset=utf-8", Transfer-Encoding:"chunked", Connection:"keep-alive", access-control-allow-credentials:"true", Cache-Control:"max-age=43200", etag:"W/"aa6-j2NSH739l9uq40OywFMn7Y0C/iY"", expires:"-1", nel:"{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}", pragma:"no-cache", report-to:"{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=KL1%2FkBDFYe0JvwD0UIxjuJxlNS%2FcThMvzHW5vNSjUkw%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1765349121"}],"max_age":3600}", reporting-endpoints:"heroku-nel="https://nel.heroku.com/reports?s=KL1%2FkBDFYe0JvwD0UIxjuJxlNS%2FcThMvzHW5vNSjUkw%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1765349121"", Server:"cloudflare", vary:"Origin, Accept-Encoding", via:"2.0 heroku-router", x-content-type-options:"nosniff", x-powered-by:"Express", x-ratelimit-limit:"1000", x-ratelimit-remaining:"999", x-ratelimit-reset:"1765349164", Age:"22295", cf-cache-status:"HIT", CF-RAY:"9ac2f8d36dafe75f-DEN", alt-svc:"h3=":443"; ma=86400"]
+2025-12-10T23:37:11.546-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "eum et est occaecati",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "nesciunt quas odio",
+    "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "dolorem eum magni eos aperiam quia",
+    "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+  },
+  {
+    "userId": 1,
+    "id": 7,
+    "title": "magnam facilis autem",
+    "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+  },
+  {
+    "userId": 1,
+    "id": 8,
+    "title": "dolorem dolore est ipsam",
+    "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+  },
+  {
+    "userId": 1,
+    "id": 9,
+    "title": "nesciunt iure omnis dolorem tempora et accusantium",
+    "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
+  },
+  {
+    "userId": 1,
+    "id": 10,
+    "title": "optio molestias id quia eum",
+    "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
+  }
+]
+2025-12-10T23:37:11.546-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ===================================================================
+2025-12-10T23:37:11.548-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Retrieved 10 posts for user 1
+]]></system-out>
+  </testcase>
+  <testcase name="testGetListOfResources" classname="GET Request Examples" time="0.038">
+    <system-out><![CDATA[2025-12-10T23:37:11.550-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : 
+
+========== TEST: GET List of Resources ==========
+
+2025-12-10T23:37:11.550-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= REQUEST =============================
+2025-12-10T23:37:11.550-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : URI         : https://jsonplaceholder.typicode.com/posts
+2025-12-10T23:37:11.550-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Method      : GET
+2025-12-10T23:37:11.550-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Accept:"application/json", Content-Length:"0"]
+2025-12-10T23:37:11.580-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= RESPONSE ============================
+2025-12-10T23:37:11.580-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Code : 200 OK
+2025-12-10T23:37:11.580-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Text : OK
+2025-12-10T23:37:11.580-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Date:"Thu, 11 Dec 2025 06:37:11 GMT", Content-Type:"application/json; charset=utf-8", Transfer-Encoding:"chunked", Connection:"keep-alive", access-control-allow-credentials:"true", Cache-Control:"max-age=43200", etag:"W/"6b80-Ybsq/K6GwwqrYkAsFxqDXGC7DoM"", expires:"-1", nel:"{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}", pragma:"no-cache", report-to:"{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=FZ%2BbyiLMXQgY5m8MfKmE%2BaRTj2Thn6AplQo9eU5rGSQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761848674"}],"max_age":3600}", reporting-endpoints:"heroku-nel="https://nel.heroku.com/reports?s=FZ%2BbyiLMXQgY5m8MfKmE%2BaRTj2Thn6AplQo9eU5rGSQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1761848674"", Server:"cloudflare", vary:"Origin, Accept-Encoding", via:"2.0 heroku-router", x-content-type-options:"nosniff", x-powered-by:"Express", x-ratelimit-limit:"1000", x-ratelimit-remaining:"999", x-ratelimit-reset:"1761848728", Age:"21000", cf-cache-status:"HIT", CF-RAY:"9ac2f8d39e56e75f-DEN", alt-svc:"h3=":443"; ma=86400"]
+2025-12-10T23:37:11.584-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "eum et est occaecati",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "nesciunt quas odio",
+    "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "dolorem eum magni eos aperiam quia",
+    "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+  },
+  {
+    "userId": 1,
+    "id": 7,
+    "title": "magnam facilis autem",
+    "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+  },
+  {
+    "userId": 1,
+    "id": 8,
+    "title": "dolorem dolore est ipsam",
+    "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+  },
+  {
+    "userId": 1,
+    "id": 9,
+    "title": "nesciunt iure omnis dolorem tempora et accusantium",
+    "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
+  },
+  {
+    "userId": 1,
+    "id": 10,
+    "title": "optio molestias id quia eum",
+    "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
+  },
+  {
+    "userId": 2,
+    "id": 11,
+    "title": "et ea vero quia laudantium autem",
+    "body": "delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus\naccusamus in eum beatae sit\nvel qui neque voluptates ut commodi qui incidunt\nut animi commodi"
+  },
+  {
+    "userId": 2,
+    "id": 12,
+    "title": "in quibusdam tempore odit est dolorem",
+    "body": "itaque id aut magnam\npraesentium quia et ea odit et ea voluptas et\nsapiente quia nihil amet occaecati quia id voluptatem\nincidunt ea est distinctio odio"
+  },
+  {
+    "userId": 2,
+    "id": 13,
+    "title": "dolorum ut in voluptas mollitia et saepe quo animi",
+    "body": "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam"
+  },
+  {
+    "userId": 2,
+    "id": 14,
+    "title": "voluptatem eligendi optio",
+    "body": "fuga et accusamus dolorum perferendis illo voluptas\nnon doloremque neque facere\nad qui dolorum molestiae beatae\nsed aut voluptas totam sit illum"
+  },
+  {
+    "userId": 2,
+    "id": 15,
+    "title": "eveniet quod temporibus",
+    "body": "reprehenderit quos placeat\nvelit minima officia dolores impedit repudiandae molestiae nam\nvoluptas recusandae quis delectus\nofficiis harum fugiat vitae"
+  },
+  {
+    "userId": 2,
+    "id": 16,
+    "title": "sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio",
+    "body": "suscipit nam nisi quo aperiam aut\nasperiores eos fugit maiores voluptatibus quia\nvoluptatem quis ullam qui in alias quia est\nconsequatur magni mollitia accusamus ea nisi voluptate dicta"
+  },
+  {
+    "userId": 2,
+    "id": 17,
+    "title": "fugit voluptas sed molestias voluptatem provident",
+    "body": "eos voluptas et aut odit natus earum\naspernatur fuga molestiae ullam\ndeserunt ratione qui eos\nqui nihil ratione nemo velit ut aut id quo"
+  },
+  {
+    "userId": 2,
+    "id": 18,
+    "title": "voluptate et itaque vero tempora molestiae",
+    "body": "eveniet quo quis\nlaborum totam consequatur non dolor\nut et est repudiandae\nest voluptatem vel debitis et magnam"
+  },
+  {
+    "userId": 2,
+    "id": 19,
+    "title": "adipisci placeat illum aut reiciendis qui",
+    "body": "illum quis cupiditate provident sit magnam\nea sed aut omnis\nveniam maiores ullam consequatur atque\nadipisci quo iste expedita sit quos voluptas"
+  },
+  {
+    "userId": 2,
+    "id": 20,
+    "title": "doloribus ad provident suscipit at",
+    "body": "qui consequuntur ducimus possimus quisquam amet similique\nsuscipit porro ipsam amet\neos veritatis officiis exercitationem vel fugit aut necessitatibus totam\nomnis rerum consequatur expedita quidem cumque explicabo"
+  },
+  {
+    "userId": 3,
+    "id": 21,
+    "title": "asperiores ea ipsam voluptatibus modi minima quia sint",
+    "body": "repellat aliquid praesentium dolorem quo\nsed totam minus non itaque\nnihil labore molestiae sunt dolor eveniet hic recusandae veniam\ntempora et tenetur expedita sunt"
+  },
+  {
+    "userId": 3,
+    "id": 22,
+    "title": "dolor sint quo a velit explicabo quia nam",
+    "body": "eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse"
+  },
+  {
+    "userId": 3,
+    "id": 23,
+    "title": "maxime id vitae nihil numquam",
+    "body": "veritatis unde neque eligendi\nquae quod architecto quo neque vitae\nest illo sit tempora doloremque fugit quod\net et vel beatae sequi ullam sed tenetur perspiciatis"
+  },
+  {
+    "userId": 3,
+    "id": 24,
+    "title": "autem hic labore sunt dolores incidunt",
+    "body": "enim et ex nulla\nomnis voluptas quia qui\nvoluptatem consequatur numquam aliquam sunt\ntotam recusandae id dignissimos aut sed asperiores deserunt"
+  },
+  {
+    "userId": 3,
+    "id": 25,
+    "title": "rem alias distinctio quo quis",
+    "body": "ullam consequatur ut\nomnis quis sit vel consequuntur\nipsa eligendi ipsum molestiae et omnis error nostrum\nmolestiae illo tempore quia et distinctio"
+  },
+  {
+    "userId": 3,
+    "id": 26,
+    "title": "est et quae odit qui non",
+    "body": "similique esse doloribus nihil accusamus\nomnis dolorem fuga consequuntur reprehenderit fugit recusandae temporibus\nperspiciatis cum ut laudantium\nomnis aut molestiae vel vero"
+  },
+  {
+    "userId": 3,
+    "id": 27,
+    "title": "quasi id et eos tenetur aut quo autem",
+    "body": "eum sed dolores ipsam sint possimus debitis occaecati\ndebitis qui qui et\nut placeat enim earum aut odit facilis\nconsequatur suscipit necessitatibus rerum sed inventore temporibus consequatur"
+  },
+  {
+    "userId": 3,
+    "id": 28,
+    "title": "delectus ullam et corporis nulla voluptas sequi",
+    "body": "non et quaerat ex quae ad maiores\nmaiores recusandae totam aut blanditiis mollitia quas illo\nut voluptatibus voluptatem\nsimilique nostrum eum"
+  },
+  {
+    "userId": 3,
+    "id": 29,
+    "title": "iusto eius quod necessitatibus culpa ea",
+    "body": "odit magnam ut saepe sed non qui\ntempora atque nihil\naccusamus illum doloribus illo dolor\neligendi repudiandae odit magni similique sed cum maiores"
+  },
+  {
+    "userId": 3,
+    "id": 30,
+    "title": "a quo magni similique perferendis",
+    "body": "alias dolor cumque\nimpedit blanditiis non eveniet odio maxime\nblanditiis amet eius quis tempora quia autem rem\na provident perspiciatis quia"
+  },
+  {
+    "userId": 4,
+    "id": 31,
+    "title": "ullam ut quidem id aut vel consequuntur",
+    "body": "debitis eius sed quibusdam non quis consectetur vitae\nimpedit ut qui consequatur sed aut in\nquidem sit nostrum et maiores adipisci atque\nquaerat voluptatem adipisci repudiandae"
+  },
+  {
+    "userId": 4,
+    "id": 32,
+    "title": "doloremque illum aliquid sunt",
+    "body": "deserunt eos nobis asperiores et hic\nest debitis repellat molestiae optio\nnihil ratione ut eos beatae quibusdam distinctio maiores\nearum voluptates et aut adipisci ea maiores voluptas maxime"
+  },
+  {
+    "userId": 4,
+    "id": 33,
+    "title": "qui explicabo molestiae dolorem",
+    "body": "rerum ut et numquam laborum odit est sit\nid qui sint in\nquasi tenetur tempore aperiam et quaerat qui in\nrerum officiis sequi cumque quod"
+  },
+  {
+    "userId": 4,
+    "id": 34,
+    "title": "magnam ut rerum iure",
+    "body": "ea velit perferendis earum ut voluptatem voluptate itaque iusto\ntotam pariatur in\nnemo voluptatem voluptatem autem magni tempora minima in\nest distinctio qui assumenda accusamus dignissimos officia nesciunt nobis"
+  },
+  {
+    "userId": 4,
+    "id": 35,
+    "title": "id nihil consequatur molestias animi provident",
+    "body": "nisi error delectus possimus ut eligendi vitae\nplaceat eos harum cupiditate facilis reprehenderit voluptatem beatae\nmodi ducimus quo illum voluptas eligendi\net nobis quia fugit"
+  },
+  {
+    "userId": 4,
+    "id": 36,
+    "title": "fuga nam accusamus voluptas reiciendis itaque",
+    "body": "ad mollitia et omnis minus architecto odit\nvoluptas doloremque maxime aut non ipsa qui alias veniam\nblanditiis culpa aut quia nihil cumque facere et occaecati\nqui aspernatur quia eaque ut aperiam inventore"
+  },
+  {
+    "userId": 4,
+    "id": 37,
+    "title": "provident vel ut sit ratione est",
+    "body": "debitis et eaque non officia sed nesciunt pariatur vel\nvoluptatem iste vero et ea\nnumquam aut expedita ipsum nulla in\nvoluptates omnis consequatur aut enim officiis in quam qui"
+  },
+  {
+    "userId": 4,
+    "id": 38,
+    "title": "explicabo et eos deleniti nostrum ab id repellendus",
+    "body": "animi esse sit aut sit nesciunt assumenda eum voluptas\nquia voluptatibus provident quia necessitatibus ea\nrerum repudiandae quia voluptatem delectus fugit aut id quia\nratione optio eos iusto veniam iure"
+  },
+  {
+    "userId": 4,
+    "id": 39,
+    "title": "eos dolorem iste accusantium est eaque quam",
+    "body": "corporis rerum ducimus vel eum accusantium\nmaxime aspernatur a porro possimus iste omnis\nest in deleniti asperiores fuga aut\nvoluptas sapiente vel dolore minus voluptatem incidunt ex"
+  },
+  {
+    "userId": 4,
+    "id": 40,
+    "title": "enim quo cumque",
+    "body": "ut voluptatum aliquid illo tenetur nemo sequi quo facilis\nipsum rem optio mollitia quas\nvoluptatem eum voluptas qui\nunde omnis voluptatem iure quasi maxime voluptas nam"
+  },
+  {
+    "userId": 5,
+    "id": 41,
+    "title": "non est facere",
+    "body": "molestias id nostrum\nexcepturi molestiae dolore omnis repellendus quaerat saepe\nconsectetur iste quaerat tenetur asperiores accusamus ex ut\nnam quidem est ducimus sunt debitis saepe"
+  },
+  {
+    "userId": 5,
+    "id": 42,
+    "title": "commodi ullam sint et excepturi error explicabo praesentium voluptas",
+    "body": "odio fugit voluptatum ducimus earum autem est incidunt voluptatem\nodit reiciendis aliquam sunt sequi nulla dolorem\nnon facere repellendus voluptates quia\nratione harum vitae ut"
+  },
+  {
+    "userId": 5,
+    "id": 43,
+    "title": "eligendi iste nostrum consequuntur adipisci praesentium sit beatae perferendis",
+    "body": "similique fugit est\nillum et dolorum harum et voluptate eaque quidem\nexercitationem quos nam commodi possimus cum odio nihil nulla\ndolorum exercitationem magnam ex et a et distinctio debitis"
+  },
+  {
+    "userId": 5,
+    "id": 44,
+    "title": "optio dolor molestias sit",
+    "body": "temporibus est consectetur dolore\net libero debitis vel velit laboriosam quia\nipsum quibusdam qui itaque fuga rem aut\nea et iure quam sed maxime ut distinctio quae"
+  },
+  {
+    "userId": 5,
+    "id": 45,
+    "title": "ut numquam possimus omnis eius suscipit laudantium iure",
+    "body": "est natus reiciendis nihil possimus aut provident\nex et dolor\nrepellat pariatur est\nnobis rerum repellendus dolorem autem"
+  },
+  {
+    "userId": 5,
+    "id": 46,
+    "title": "aut quo modi neque nostrum ducimus",
+    "body": "voluptatem quisquam iste\nvoluptatibus natus officiis facilis dolorem\nquis quas ipsam\nvel et voluptatum in aliquid"
+  },
+  {
+    "userId": 5,
+    "id": 47,
+    "title": "quibusdam cumque rem aut deserunt",
+    "body": "voluptatem assumenda ut qui ut cupiditate aut impedit veniam\noccaecati nemo illum voluptatem laudantium\nmolestiae beatae rerum ea iure soluta nostrum\neligendi et voluptate"
+  },
+  {
+    "userId": 5,
+    "id": 48,
+    "title": "ut voluptatem illum ea doloribus itaque eos",
+    "body": "voluptates quo voluptatem facilis iure occaecati\nvel assumenda rerum officia et\nillum perspiciatis ab deleniti\nlaudantium repellat ad ut et autem reprehenderit"
+  },
+  {
+    "userId": 5,
+    "id": 49,
+    "title": "laborum non sunt aut ut assumenda perspiciatis voluptas",
+    "body": "inventore ab sint\nnatus fugit id nulla sequi architecto nihil quaerat\neos tenetur in in eum veritatis non\nquibusdam officiis aspernatur cumque aut commodi aut"
+  },
+  {
+    "userId": 5,
+    "id": 50,
+    "title": "repellendus qui recusandae incidunt voluptates tenetur qui omnis exercitationem",
+    "body": "error suscipit maxime adipisci consequuntur recusandae\nvoluptas eligendi et est et voluptates\nquia distinctio ab amet quaerat molestiae et vitae\nadipisci impedit sequi nesciunt quis consectetur"
+  },
+  {
+    "userId": 6,
+    "id": 51,
+    "title": "soluta aliquam aperiam consequatur illo quis voluptas",
+    "body": "sunt dolores aut doloribus\ndolore doloribus voluptates tempora et\ndoloremque et quo\ncum asperiores sit consectetur dolorem"
+  },
+  {
+    "userId": 6,
+    "id": 52,
+    "title": "qui enim et consequuntur quia animi quis voluptate quibusdam",
+    "body": "iusto est quibusdam fuga quas quaerat molestias\na enim ut sit accusamus enim\ntemporibus iusto accusantium provident architecto\nsoluta esse reprehenderit qui laborum"
+  },
+  {
+    "userId": 6,
+    "id": 53,
+    "title": "ut quo aut ducimus alias",
+    "body": "minima harum praesentium eum rerum illo dolore\nquasi exercitationem rerum nam\nporro quis neque quo\nconsequatur minus dolor quidem veritatis sunt non explicabo similique"
+  },
+  {
+    "userId": 6,
+    "id": 54,
+    "title": "sit asperiores ipsam eveniet odio non quia",
+    "body": "totam corporis dignissimos\nvitae dolorem ut occaecati accusamus\nex velit deserunt\net exercitationem vero incidunt corrupti mollitia"
+  },
+  {
+    "userId": 6,
+    "id": 55,
+    "title": "sit vel voluptatem et non libero",
+    "body": "debitis excepturi ea perferendis harum libero optio\neos accusamus cum fuga ut sapiente repudiandae\net ut incidunt omnis molestiae\nnihil ut eum odit"
+  },
+  {
+    "userId": 6,
+    "id": 56,
+    "title": "qui et at rerum necessitatibus",
+    "body": "aut est omnis dolores\nneque rerum quod ea rerum velit pariatur beatae excepturi\net provident voluptas corrupti\ncorporis harum reprehenderit dolores eligendi"
+  },
+  {
+    "userId": 6,
+    "id": 57,
+    "title": "sed ab est est",
+    "body": "at pariatur consequuntur earum quidem\nquo est laudantium soluta voluptatem\nqui ullam et est\net cum voluptas voluptatum repellat est"
+  },
+  {
+    "userId": 6,
+    "id": 58,
+    "title": "voluptatum itaque dolores nisi et quasi",
+    "body": "veniam voluptatum quae adipisci id\net id quia eos ad et dolorem\naliquam quo nisi sunt eos impedit error\nad similique veniam"
+  },
+  {
+    "userId": 6,
+    "id": 59,
+    "title": "qui commodi dolor at maiores et quis id accusantium",
+    "body": "perspiciatis et quam ea autem temporibus non voluptatibus qui\nbeatae a earum officia nesciunt dolores suscipit voluptas et\nanimi doloribus cum rerum quas et magni\net hic ut ut commodi expedita sunt"
+  },
+  {
+    "userId": 6,
+    "id": 60,
+    "title": "consequatur placeat omnis quisquam quia reprehenderit fugit veritatis facere",
+    "body": "asperiores sunt ab assumenda cumque modi velit\nqui esse omnis\nvoluptate et fuga perferendis voluptas\nillo ratione amet aut et omnis"
+  },
+  {
+    "userId": 7,
+    "id": 61,
+    "title": "voluptatem doloribus consectetur est ut ducimus",
+    "body": "ab nemo optio odio\ndelectus tenetur corporis similique nobis repellendus rerum omnis facilis\nvero blanditiis debitis in nesciunt doloribus dicta dolores\nmagnam minus velit"
+  },
+  {
+    "userId": 7,
+    "id": 62,
+    "title": "beatae enim quia vel",
+    "body": "enim aspernatur illo distinctio quae praesentium\nbeatae alias amet delectus qui voluptate distinctio\nodit sint accusantium autem omnis\nquo molestiae omnis ea eveniet optio"
+  },
+  {
+    "userId": 7,
+    "id": 63,
+    "title": "voluptas blanditiis repellendus animi ducimus error sapiente et suscipit",
+    "body": "enim adipisci aspernatur nemo\nnumquam omnis facere dolorem dolor ex quis temporibus incidunt\nab delectus culpa quo reprehenderit blanditiis asperiores\naccusantium ut quam in voluptatibus voluptas ipsam dicta"
+  },
+  {
+    "userId": 7,
+    "id": 64,
+    "title": "et fugit quas eum in in aperiam quod",
+    "body": "id velit blanditiis\neum ea voluptatem\nmolestiae sint occaecati est eos perspiciatis\nincidunt a error provident eaque aut aut qui"
+  },
+  {
+    "userId": 7,
+    "id": 65,
+    "title": "consequatur id enim sunt et et",
+    "body": "voluptatibus ex esse\nsint explicabo est aliquid cumque adipisci fuga repellat labore\nmolestiae corrupti ex saepe at asperiores et perferendis\nnatus id esse incidunt pariatur"
+  },
+  {
+    "userId": 7,
+    "id": 66,
+    "title": "repudiandae ea animi iusto",
+    "body": "officia veritatis tenetur vero qui itaque\nsint non ratione\nsed et ut asperiores iusto eos molestiae nostrum\nveritatis quibusdam et nemo iusto saepe"
+  },
+  {
+    "userId": 7,
+    "id": 67,
+    "title": "aliquid eos sed fuga est maxime repellendus",
+    "body": "reprehenderit id nostrum\nvoluptas doloremque pariatur sint et accusantium quia quod aspernatur\net fugiat amet\nnon sapiente et consequatur necessitatibus molestiae"
+  },
+  {
+    "userId": 7,
+    "id": 68,
+    "title": "odio quis facere architecto reiciendis optio",
+    "body": "magnam molestiae perferendis quisquam\nqui cum reiciendis\nquaerat animi amet hic inventore\nea quia deleniti quidem saepe porro velit"
+  },
+  {
+    "userId": 7,
+    "id": 69,
+    "title": "fugiat quod pariatur odit minima",
+    "body": "officiis error culpa consequatur modi asperiores et\ndolorum assumenda voluptas et vel qui aut vel rerum\nvoluptatum quisquam perspiciatis quia rerum consequatur totam quas\nsequi commodi repudiandae asperiores et saepe a"
+  },
+  {
+    "userId": 7,
+    "id": 70,
+    "title": "voluptatem laborum magni",
+    "body": "sunt repellendus quae\nest asperiores aut deleniti esse accusamus repellendus quia aut\nquia dolorem unde\neum tempora esse dolore"
+  },
+  {
+    "userId": 8,
+    "id": 71,
+    "title": "et iusto veniam et illum aut fuga",
+    "body": "occaecati a doloribus\niste saepe consectetur placeat eum voluptate dolorem et\nqui quo quia voluptas\nrerum ut id enim velit est perferendis"
+  },
+  {
+    "userId": 8,
+    "id": 72,
+    "title": "sint hic doloribus consequatur eos non id",
+    "body": "quam occaecati qui deleniti consectetur\nconsequatur aut facere quas exercitationem aliquam hic voluptas\nneque id sunt ut aut accusamus\nsunt consectetur expedita inventore velit"
+  },
+  {
+    "userId": 8,
+    "id": 73,
+    "title": "consequuntur deleniti eos quia temporibus ab aliquid at",
+    "body": "voluptatem cumque tenetur consequatur expedita ipsum nemo quia explicabo\naut eum minima consequatur\ntempore cumque quae est et\net in consequuntur voluptatem voluptates aut"
+  },
+  {
+    "userId": 8,
+    "id": 74,
+    "title": "enim unde ratione doloribus quas enim ut sit sapiente",
+    "body": "odit qui et et necessitatibus sint veniam\nmollitia amet doloremque molestiae commodi similique magnam et quam\nblanditiis est itaque\nquo et tenetur ratione occaecati molestiae tempora"
+  },
+  {
+    "userId": 8,
+    "id": 75,
+    "title": "dignissimos eum dolor ut enim et delectus in",
+    "body": "commodi non non omnis et voluptas sit\nautem aut nobis magnam et sapiente voluptatem\net laborum repellat qui delectus facilis temporibus\nrerum amet et nemo voluptate expedita adipisci error dolorem"
+  },
+  {
+    "userId": 8,
+    "id": 76,
+    "title": "doloremque officiis ad et non perferendis",
+    "body": "ut animi facere\ntotam iusto tempore\nmolestiae eum aut et dolorem aperiam\nquaerat recusandae totam odio"
+  },
+  {
+    "userId": 8,
+    "id": 77,
+    "title": "necessitatibus quasi exercitationem odio",
+    "body": "modi ut in nulla repudiandae dolorum nostrum eos\naut consequatur omnis\nut incidunt est omnis iste et quam\nvoluptates sapiente aliquam asperiores nobis amet corrupti repudiandae provident"
+  },
+  {
+    "userId": 8,
+    "id": 78,
+    "title": "quam voluptatibus rerum veritatis",
+    "body": "nobis facilis odit tempore cupiditate quia\nassumenda doloribus rerum qui ea\nillum et qui totam\naut veniam repellendus"
+  },
+  {
+    "userId": 8,
+    "id": 79,
+    "title": "pariatur consequatur quia magnam autem omnis non amet",
+    "body": "libero accusantium et et facere incidunt sit dolorem\nnon excepturi qui quia sed laudantium\nquisquam molestiae ducimus est\nofficiis esse molestiae iste et quos"
+  },
+  {
+    "userId": 8,
+    "id": 80,
+    "title": "labore in ex et explicabo corporis aut quas",
+    "body": "ex quod dolorem ea eum iure qui provident amet\nquia qui facere excepturi et repudiandae\nasperiores molestias provident\nminus incidunt vero fugit rerum sint sunt excepturi provident"
+  },
+  {
+    "userId": 9,
+    "id": 81,
+    "title": "tempora rem veritatis voluptas quo dolores vero",
+    "body": "facere qui nesciunt est voluptatum voluptatem nisi\nsequi eligendi necessitatibus ea at rerum itaque\nharum non ratione velit laboriosam quis consequuntur\nex officiis minima doloremque voluptas ut aut"
+  },
+  {
+    "userId": 9,
+    "id": 82,
+    "title": "laudantium voluptate suscipit sunt enim enim",
+    "body": "ut libero sit aut totam inventore sunt\nporro sint qui sunt molestiae\nconsequatur cupiditate qui iste ducimus adipisci\ndolor enim assumenda soluta laboriosam amet iste delectus hic"
+  },
+  {
+    "userId": 9,
+    "id": 83,
+    "title": "odit et voluptates doloribus alias odio et",
+    "body": "est molestiae facilis quis tempora numquam nihil qui\nvoluptate sapiente consequatur est qui\nnecessitatibus autem aut ipsa aperiam modi dolore numquam\nreprehenderit eius rem quibusdam"
+  },
+  {
+    "userId": 9,
+    "id": 84,
+    "title": "optio ipsam molestias necessitatibus occaecati facilis veritatis dolores aut",
+    "body": "sint molestiae magni a et quos\neaque et quasi\nut rerum debitis similique veniam\nrecusandae dignissimos dolor incidunt consequatur odio"
+  },
+  {
+    "userId": 9,
+    "id": 85,
+    "title": "dolore veritatis porro provident adipisci blanditiis et sunt",
+    "body": "similique sed nisi voluptas iusto omnis\nmollitia et quo\nassumenda suscipit officia magnam sint sed tempora\nenim provident pariatur praesentium atque animi amet ratione"
+  },
+  {
+    "userId": 9,
+    "id": 86,
+    "title": "placeat quia et porro iste",
+    "body": "quasi excepturi consequatur iste autem temporibus sed molestiae beatae\net quaerat et esse ut\nvoluptatem occaecati et vel explicabo autem\nasperiores pariatur deserunt optio"
+  },
+  {
+    "userId": 9,
+    "id": 87,
+    "title": "nostrum quis quasi placeat",
+    "body": "eos et molestiae\nnesciunt ut a\ndolores perspiciatis repellendus repellat aliquid\nmagnam sint rem ipsum est"
+  },
+  {
+    "userId": 9,
+    "id": 88,
+    "title": "sapiente omnis fugit eos",
+    "body": "consequatur omnis est praesentium\nducimus non iste\nneque hic deserunt\nvoluptatibus veniam cum et rerum sed"
+  },
+  {
+    "userId": 9,
+    "id": 89,
+    "title": "sint soluta et vel magnam aut ut sed qui",
+    "body": "repellat aut aperiam totam temporibus autem et\narchitecto magnam ut\nconsequatur qui cupiditate rerum quia soluta dignissimos nihil iure\ntempore quas est"
+  },
+  {
+    "userId": 9,
+    "id": 90,
+    "title": "ad iusto omnis odit dolor voluptatibus",
+    "body": "minus omnis soluta quia\nqui sed adipisci voluptates illum ipsam voluptatem\neligendi officia ut in\neos soluta similique molestias praesentium blanditiis"
+  },
+  {
+    "userId": 10,
+    "id": 91,
+    "title": "aut amet sed",
+    "body": "libero voluptate eveniet aperiam sed\nsunt placeat suscipit molestias\nsimilique fugit nam natus\nexpedita consequatur consequatur dolores quia eos et placeat"
+  },
+  {
+    "userId": 10,
+    "id": 92,
+    "title": "ratione ex tenetur perferendis",
+    "body": "aut et excepturi dicta laudantium sint rerum nihil\nlaudantium et at\na neque minima officia et similique libero et\ncommodi voluptate qui"
+  },
+  {
+    "userId": 10,
+    "id": 93,
+    "title": "beatae soluta recusandae",
+    "body": "dolorem quibusdam ducimus consequuntur dicta aut quo laboriosam\nvoluptatem quis enim recusandae ut sed sunt\nnostrum est odit totam\nsit error sed sunt eveniet provident qui nulla"
+  },
+  {
+    "userId": 10,
+    "id": 94,
+    "title": "qui qui voluptates illo iste minima",
+    "body": "aspernatur expedita soluta quo ab ut similique\nexpedita dolores amet\nsed temporibus distinctio magnam saepe deleniti\nomnis facilis nam ipsum natus sint similique omnis"
+  },
+  {
+    "userId": 10,
+    "id": 95,
+    "title": "id minus libero illum nam ad officiis",
+    "body": "earum voluptatem facere provident blanditiis velit laboriosam\npariatur accusamus odio saepe\ncumque dolor qui a dicta ab doloribus consequatur omnis\ncorporis cupiditate eaque assumenda ad nesciunt"
+  },
+  {
+    "userId": 10,
+    "id": 96,
+    "title": "quaerat velit veniam amet cupiditate aut numquam ut sequi",
+    "body": "in non odio excepturi sint eum\nlabore voluptates vitae quia qui et\ninventore itaque rerum\nveniam non exercitationem delectus aut"
+  },
+  {
+    "userId": 10,
+    "id": 97,
+    "title": "quas fugiat ut perspiciatis vero provident",
+    "body": "eum non blanditiis soluta porro quibusdam voluptas\nvel voluptatem qui placeat dolores qui velit aut\nvel inventore aut cumque culpa explicabo aliquid at\nperspiciatis est et voluptatem dignissimos dolor itaque sit nam"
+  },
+  {
+    "userId": 10,
+    "id": 98,
+    "title": "laboriosam dolor voluptates",
+    "body": "doloremque ex facilis sit sint culpa\nsoluta assumenda eligendi non ut eius\nsequi ducimus vel quasi\nveritatis est dolores"
+  },
+  {
+    "userId": 10,
+    "id": 99,
+    "title": "temporibus sit alias delectus eligendi possimus magni",
+    "body": "quo deleniti praesentium dicta non quod\naut est molestias\nmolestias et officia quis nihil\nitaque dolorem quia"
+  },
+  {
+    "userId": 10,
+    "id": 100,
+    "title": "at nam consequatur ea labore ea harum",
+    "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
+  }
+]
+2025-12-10T23:37:11.584-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ===================================================================
+2025-12-10T23:37:11.587-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Retrieved 100 posts
+]]></system-out>
+  </testcase>
+  <testcase name="testGetWithResponseEntity" classname="GET Request Examples" time="0.033">
+    <system-out><![CDATA[2025-12-10T23:37:11.589-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : 
+
+========== TEST: GET with ResponseEntity ==========
+
+2025-12-10T23:37:11.589-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= REQUEST =============================
+2025-12-10T23:37:11.589-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : URI         : https://jsonplaceholder.typicode.com/users/1
+2025-12-10T23:37:11.589-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Method      : GET
+2025-12-10T23:37:11.589-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Accept:"application/json", Content-Length:"0"]
+2025-12-10T23:37:11.619-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= RESPONSE ============================
+2025-12-10T23:37:11.619-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Code : 200 OK
+2025-12-10T23:37:11.619-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Text : OK
+2025-12-10T23:37:11.619-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Date:"Thu, 11 Dec 2025 06:37:11 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"509", Connection:"keep-alive", access-control-allow-credentials:"true", Cache-Control:"max-age=43200", etag:"W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"", expires:"-1", nel:"{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}", pragma:"no-cache", report-to:"{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=KvEpb2mJqRuU%2BC3F8oceIXPCZHx6RABhIbldARtSJzQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1764980695"}],"max_age":3600}", reporting-endpoints:"heroku-nel="https://nel.heroku.com/reports?s=KvEpb2mJqRuU%2BC3F8oceIXPCZHx6RABhIbldARtSJzQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1764980695"", Server:"cloudflare", vary:"Origin, Accept-Encoding", via:"2.0 heroku-router", x-content-type-options:"nosniff", x-powered-by:"Express", x-ratelimit-limit:"1000", x-ratelimit-remaining:"990", x-ratelimit-reset:"1764980700", Age:"28349", Accept-Ranges:"bytes", cf-cache-status:"HIT", CF-RAY:"9ac2f8d3ded3e75f-DEN", alt-svc:"h3=":443"; ma=86400"]
+2025-12-10T23:37:11.619-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+2025-12-10T23:37:11.619-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ===================================================================
+2025-12-10T23:37:11.620-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status: 200 OK
+2025-12-10T23:37:11.620-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Content-Type: application/json;charset=utf-8
+2025-12-10T23:37:11.620-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body: User(id=1, name=Leanne Graham, username=Bret, email=Sincere@april.biz, phone=1-770-736-8031 x56442, website=hildegard.org)
+]]></system-out>
+  </testcase>
+  <testcase name="testGetSingleResource" classname="GET Request Examples" time="0.031">
+    <system-out><![CDATA[2025-12-10T23:37:11.621-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : 
+
+========== TEST: GET Single Resource ==========
+
+2025-12-10T23:37:11.622-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= REQUEST =============================
+2025-12-10T23:37:11.622-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : URI         : https://jsonplaceholder.typicode.com/users/1
+2025-12-10T23:37:11.622-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Method      : GET
+2025-12-10T23:37:11.622-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Accept:"application/json", Content-Length:"0"]
+2025-12-10T23:37:11.650-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ============================= RESPONSE ============================
+2025-12-10T23:37:11.650-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Code : 200 OK
+2025-12-10T23:37:11.650-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Status Text : OK
+2025-12-10T23:37:11.650-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Headers     : [Date:"Thu, 11 Dec 2025 06:37:11 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"509", Connection:"keep-alive", access-control-allow-credentials:"true", Cache-Control:"max-age=43200", etag:"W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"", expires:"-1", nel:"{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}", pragma:"no-cache", report-to:"{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=KvEpb2mJqRuU%2BC3F8oceIXPCZHx6RABhIbldARtSJzQ%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1764980695"}],"max_age":3600}", reporting-endpoints:"heroku-nel="https://nel.heroku.com/reports?s=KvEpb2mJqRuU%2BC3F8oceIXPCZHx6RABhIbldARtSJzQ%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1764980695"", Server:"cloudflare", vary:"Origin, Accept-Encoding", via:"2.0 heroku-router", x-content-type-options:"nosniff", x-powered-by:"Express", x-ratelimit-limit:"1000", x-ratelimit-remaining:"990", x-ratelimit-reset:"1764980700", Age:"28349", Accept-Ranges:"bytes", cf-cache-status:"HIT", CF-RAY:"9ac2f8d40f35e75f-DEN", alt-svc:"h3=":443"; ma=86400"]
+2025-12-10T23:37:11.651-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Body        : {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+2025-12-10T23:37:11.651-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : ===================================================================
+2025-12-10T23:37:11.652-07:00  INFO 43156 --- [springboot-with-restclient] [           main] c.f.restclient.RestClientDemoTest        : Retrieved user: User(id=1, name=Leanne Graham, username=Bret, email=Sincere@april.biz, phone=1-770-736-8031 x56442, website=hildegard.org)
+]]></system-out>
+  </testcase>
+</testsuite>
